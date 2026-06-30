@@ -4,6 +4,12 @@
     "products": "Products",
     "contact": "Contact"
   },
+  "header": {
+    "primaryNavigation": "Primary navigation",
+    "mobileNavigation": "Mobile navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
   "seo": {
     "home": {
       "title": "ArtAqua | PostModerna",
@@ -24,32 +30,68 @@
       "title": "Bathroom equipment with proven quality and modern design",
       "description": "ArtAqua is a PostModerna brand and one of the first companies in Macedonia specialized in designer bathroom equipment, import, trade and installation.",
       "primaryAction": "View products",
-      "secondaryAction": "Contact us"
+      "secondaryAction": "Contact us",
+      "image": "/images/showroom/artaqua-showroom-main.png",
+      "imageAlt": "ArtAqua showroom with displayed bath tubs and sanitary equipment",
+      "highlights": [
+        "Since 1997",
+        "Showroom in Skopje",
+        "Equipment and installation"
+      ]
     },
     "about": {
+      "eyebrow": "About us",
       "title": "About ArtAqua",
       "body": [
         "ArtAqua is a brand of PostModerna, one of the first companies in Macedonia specialized in designer bathroom equipment, import, trade and installation.",
         "Since 1997, the company has successfully operated on the Macedonian market and has become a recognizable brand offering high-quality services.",
         "The modern design and high quality of the products reflect the goal of following the latest European trends while offering modern, functional and reliable bathroom solutions."
       ],
-      "brands": "The product range includes renowned Italian, Slovenian and Croatian manufacturers, including CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES and AQUAESTIL."
+      "brands": "The product range includes renowned Italian, Slovenian and Croatian manufacturers, including CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES and AQUAESTIL.",
+      "image": "/images/showroom/artaqua-showroom-sanitary.png",
+      "imageAlt": "Part of the ArtAqua showroom with sanitary equipment and bathroom furniture"
     },
     "services": {
+      "eyebrow": "Services",
       "title": "Services",
+      "description": "From product selection to installation and complete execution, ArtAqua connects bathroom equipment with practical solutions.",
       "body": [
         "Professional service and strong technical knowledge of the products are key characteristics of the ArtAqua brand.",
         "For products bought in the showroom, ArtAqua offers free delivery to your home in Skopje and professional installation.",
         "In addition to sales and installation, the company can carry out the complete process of bathroom reconstruction in all of its stages.",
         "ArtAqua installs hydro and aero massage systems and additional acrylic bath tub equipment such as underwater spotlights, heaters, chromotherapy and electronic displays."
+      ],
+      "items": [
+        {
+          "title": "Professional guidance",
+          "description": "Expert support when choosing products and understanding their technical characteristics."
+        },
+        {
+          "title": "Free delivery in Skopje",
+          "description": "Products purchased in the showroom include free delivery to your home in Skopje."
+        },
+        {
+          "title": "Installation",
+          "description": "Fast and professional installation of purchased equipment."
+        },
+        {
+          "title": "Complete execution",
+          "description": "Execution through all stages of bathroom renovation."
+        },
+        {
+          "title": "Hydro-aero systems",
+          "description": "Installation of massage systems and additional equipment for acrylic bath tubs."
+        }
       ]
     },
     "productPreview": {
+      "eyebrow": "Assortment",
       "title": "Products for complete bathroom equipment",
       "description": "The offer includes sanitary ware, bath tubs, shower trays, hydro massage systems, shower enclosures, bathroom furniture, taps, showers and accessories.",
       "action": "All products"
     },
     "contactCta": {
+      "eyebrow": "Visit and contact",
       "title": "Visit the showroom",
       "description": "The ArtAqua showroom is in Taftalidze, at Moskovska Street No. 24, unit 1, opposite the Goce Delchev student residential complex.",
       "action": "Contact information"
@@ -63,37 +105,37 @@
         "id": "bath-shower-trays-hydromassage",
         "title": "Bath tubs, shower trays and hydromassage systems",
         "shortDescription": "Bath tubs and shower trays made of 100% sanitary acrylic, with hydro and aero massage systems, aromatherapy and chromotherapy options.",
-        "referenceImage": "reference/old-site/images/bath-shower-trays-hydromassage_img_gall_21_af1c14e1.jpg"
+        "referenceImage": "/images/products/bath-shower-trays.png"
       },
       {
         "id": "shower-enclosures",
         "title": "Shower enclosures",
         "shortDescription": "Shower enclosures made of tempered safety glass, hardened at high temperature and aligned with European standards.",
-        "referenceImage": "reference/old-site/images/shower-enclosures_img_gall_1_8cfc0945.png"
+        "referenceImage": "/images/products/shower-enclosures.png"
       },
       {
         "id": "sanitary-ware",
         "title": "Sanitary ware",
         "shortDescription": "High-quality sanitary ware made from material known locally as porcelain and internationally as vitreous china.",
-        "referenceImage": "reference/old-site/images/sanitary-ware_img_gall_1_57510329.png"
+        "referenceImage": "/images/products/sanitary-ware.jpg"
       },
       {
         "id": "bathroom-furniture",
         "title": "Bathroom furniture",
         "shortDescription": "Bathroom furniture made from MDF with durable final protection, PVC laminate or multiple layers of high-quality polyurethane finish.",
-        "referenceImage": "reference/old-site/images/bathroom-furniture_img_gall_1_a5a803a3.png"
+        "referenceImage": "/images/products/bathroom-furniture.jpg"
       },
       {
         "id": "taps-showers",
         "title": "Taps and showers",
         "shortDescription": "Chromium-plated brass taps with quality cartridge mechanisms that influence durability and warranty length.",
-        "referenceImage": "reference/old-site/images/taps-showers_img_gall_1_5132fafc.png"
+        "referenceImage": "/images/products/taps-showers.png"
       },
       {
         "id": "accessories",
         "title": "Accessories",
         "shortDescription": "Bathroom accessories made of brass with quality chromium-plating that preserves strength, finish and shine.",
-        "referenceImage": "reference/old-site/images/accessories_img_gall_1_8e8e6099.png"
+        "referenceImage": "/images/products/accessories.png"
       }
     ]
   },
@@ -150,6 +192,13 @@
       "message": "Message",
       "submit": "Send message"
     }
+  },
+  "footer": {
+    "tagline": "A modern bathroom showroom for sanitary equipment and professional solutions for your home.",
+    "quickLinks": "Quick links",
+    "contactTitle": "Contact",
+    "business": "ArtAqua / PostModerna",
+    "copyright": "© {year} ArtAqua. All rights reserved."
   },
   "common": {
     "buttons": {

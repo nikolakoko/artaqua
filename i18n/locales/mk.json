@@ -4,6 +4,12 @@
     "products": "Производи",
     "contact": "Контакт"
   },
+  "header": {
+    "primaryNavigation": "Главна навигација",
+    "mobileNavigation": "Мобилна навигација",
+    "openMenu": "Отвори мени",
+    "closeMenu": "Затвори мени"
+  },
   "seo": {
     "home": {
       "title": "ArtAqua | PostModerna",
@@ -24,32 +30,68 @@
       "title": "Опремување на бањи со проверен квалитет и модерен дизајн",
       "description": "ArtAqua е бренд на PostModerna, една од првите фирми во Македонија специјализирани за опремување на бањи, увоз, трговија и комплетна изведба.",
       "primaryAction": "Погледнете производи",
-      "secondaryAction": "Контактирајте не"
+      "secondaryAction": "Контактирајте не",
+      "image": "/images/showroom/artaqua-showroom-main.png",
+      "imageAlt": "Продажен салон ArtAqua со изложени кади и санитарна опрема",
+      "highlights": [
+        "Од 1997 година",
+        "Продажен салон во Скопје",
+        "Опрема и изведба"
+      ]
     },
     "about": {
+      "eyebrow": "За нас",
       "title": "За ArtAqua",
       "body": [
         "ArtAqua е бренд на фирмата PostModerna, која е меѓу првите фирми во Македонија специјализирана за опремување на бањи, увоз, трговија и комплетна изведба.",
         "Од 1997 година успешно опстојува на македонскиот пазар и е препознатлив бренд кој нуди висок и гарантиран квалитет на своите услуги.",
         "Модерниот дизајн и високиот квалитет на производите ја потврдуваат нашата цел секогаш да бидеме во тек со најновите трендови на европскиот пазар."
       ],
-      "brands": "Широкиот асортиман вклучува производи од реномирани италијански, словенечки и хрватски производители, меѓу кои CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES и AQUAESTIL."
+      "brands": "Широкиот асортиман вклучува производи од реномирани италијански, словенечки и хрватски производители, меѓу кои CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES и AQUAESTIL.",
+      "image": "/images/showroom/artaqua-showroom-sanitary.png",
+      "imageAlt": "Дел од продажниот салон ArtAqua со санитарна опрема и мебел за бањи"
     },
     "services": {
+      "eyebrow": "Услуги",
       "title": "Услуги",
+      "description": "Од избор на опрема до монтажа и комплетна изведба, ArtAqua го поврзува производот со практично решение за бањата.",
       "body": [
         "Професионалната услуга и познавањето на техничките карактеристики на производите се главна карактеристика на брендот ArtAqua.",
         "За купените производи кај нас следува бесплатен превоз до вашиот дом во Скопје, а можеме да понудиме и брза и квалитетна монтажа.",
         "Освен продажба и монтажа, нудиме и комплетна изведба во сите фази при реновирањето на вашата бања.",
         "Монтираме хидро-аеро масажни системи и дополнителна опрема за акрилни кади, како рефлектори за под вода, грејачи, хромотерапија и електронски дисплеи."
+      ],
+      "items": [
+        {
+          "title": "Професионално советување",
+          "description": "Стручна насока при избор на производи и разбирање на нивните технички карактеристики."
+        },
+        {
+          "title": "Бесплатен превоз во Скопје",
+          "description": "За купените производи следува бесплатен превоз до вашиот дом во Скопје."
+        },
+        {
+          "title": "Монтажа",
+          "description": "Брза и квалитетна монтажа на купената опрема."
+        },
+        {
+          "title": "Комплетна изведба",
+          "description": "Изведба во сите фази при реновирање на вашата бања."
+        },
+        {
+          "title": "Хидро-аеро системи",
+          "description": "Монтажа на масажни системи и дополнителна опрема за акрилни кади."
+        }
       ]
     },
     "productPreview": {
+      "eyebrow": "Асортиман",
       "title": "Производи за целосно опремување на бања",
       "description": "Понудата опфаќа санитарија, кади, туш кади, хидромасажни системи, туш кабини, мебел за бањи, батерии, тушеви и галантерија.",
       "action": "Сите производи"
     },
     "contactCta": {
+      "eyebrow": "Посета и контакт",
       "title": "Посетете го продажниот салон",
       "description": "Салонот ArtAqua се наоѓа во Тафталиџе, на ул. Московска бр. 24, лок. 1, спроти студентскиот дом „Гоце Делчев“.",
       "action": "Контакт информации"
@@ -63,37 +105,37 @@
         "id": "bath-shower-trays-hydromassage",
         "title": "Кади, туш кади и хидромасажни системи",
         "shortDescription": "Кади и туш кади од 100% акрил, со можност за хидро и аеро масажни системи, ароматерапија и хромотерапија.",
-        "referenceImage": "reference/old-site/images/bath-shower-trays-hydromassage_img_gall_21_af1c14e1.jpg"
+        "referenceImage": "/images/products/bath-shower-trays.png"
       },
       {
         "id": "shower-enclosures",
         "title": "Туш кабини",
         "shortDescription": "Туш кабини од калено сигурносно стакло, обработено на висока температура и усогласено со европски стандарди.",
-        "referenceImage": "reference/old-site/images/shower-enclosures_img_gall_1_8cfc0945.png"
+        "referenceImage": "/images/products/shower-enclosures.png"
       },
       {
         "id": "sanitary-ware",
         "title": "Санитарија",
         "shortDescription": "Санитарија од висококвалитетен материјал познат како порцелан, односно vitreous china, со траен квалитет.",
-        "referenceImage": "reference/old-site/images/sanitary-ware_img_gall_1_57510329.png"
+        "referenceImage": "/images/products/sanitary-ware.jpg"
       },
       {
         "id": "bathroom-furniture",
         "title": "Мебел за бањи",
         "shortDescription": "Мебел за бањи од МДФ со квалитетна завршна заштита, ПВЦ фолија или повеќе слоеви полиуретанска боја.",
-        "referenceImage": "reference/old-site/images/bathroom-furniture_img_gall_1_a5a803a3.png"
+        "referenceImage": "/images/products/bathroom-furniture.jpg"
       },
       {
         "id": "taps-showers",
         "title": "Батерии и тушеви",
         "shortDescription": "Батерии изработени од хромиран месинг, со квалитетен механизам кој влијае на трајноста и гаранцијата.",
-        "referenceImage": "reference/old-site/images/taps-showers_img_gall_1_5132fafc.png"
+        "referenceImage": "/images/products/taps-showers.png"
       },
       {
         "id": "accessories",
         "title": "Галантерија",
         "shortDescription": "Галантерија од месинг со квалитетна хромирана обработка, која ја зачувува цврстината, бојата и сјајот.",
-        "referenceImage": "reference/old-site/images/accessories_img_gall_1_8e8e6099.png"
+        "referenceImage": "/images/products/accessories.png"
       }
     ]
   },
@@ -150,6 +192,13 @@
       "message": "Порака",
       "submit": "Испрати порака"
     }
+  },
+  "footer": {
+    "tagline": "Модерен продажен салон за бањи, санитарна опрема и професионални решенија за вашиот дом.",
+    "quickLinks": "Линкови",
+    "contactTitle": "Контакт",
+    "business": "ArtAqua / PostModerna",
+    "copyright": "© {year} ArtAqua. Сите права се задржани."
   },
   "common": {
     "buttons": {

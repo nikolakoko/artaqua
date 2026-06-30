@@ -3,4 +3,35 @@
 
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
+  --color-aqua-50: #eefbfc;
+  --color-aqua-100: #d5f3f6;
+  --color-aqua-600: #158aa0;
+  --color-aqua-800: #07566a;
+  --color-stone-soft: #f7f5f1;
+  --color-ceramic: #fbfbf8;
+  --color-glass: #e7f6f8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #f7f5f1;
+    color: #0f172a;
+  }
+
+  ::selection {
+    background: #cffafe;
+    color: #083344;
+  }
+
+  a {
+    text-underline-offset: 0.2em;
+  }
+
+  :focus-visible {
+    outline-color: #0e7490;
+  }
 }
