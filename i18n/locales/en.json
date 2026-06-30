@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "seo": {
+    "home": {
+      "title": "ArtAqua | PostModerna",
+      "description": "ArtAqua is a PostModerna brand specialized in bathroom equipment, sanitary ware, shower enclosures, bath tubs, bathroom furniture and accessories."
+    },
+    "products": {
+      "title": "Products | ArtAqua",
+      "description": "Explore ArtAqua's six main product categories: bath tubs, shower enclosures, sanitary ware, bathroom furniture, taps and bathroom accessories."
+    },
+    "contact": {
+      "title": "Contact | ArtAqua",
+      "description": "Contact information, address, phone numbers, email addresses and working hours for the ArtAqua showroom in Skopje."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "ArtAqua / PostModerna",
+      "title": "Bathroom equipment with proven quality and modern design",
+      "description": "ArtAqua is a PostModerna brand and one of the first companies in Macedonia specialized in designer bathroom equipment, import, trade and installation.",
+      "primaryAction": "View products",
+      "secondaryAction": "Contact us"
+    },
+    "about": {
+      "title": "About ArtAqua",
+      "body": [
+        "ArtAqua is a brand of PostModerna, one of the first companies in Macedonia specialized in designer bathroom equipment, import, trade and installation.",
+        "Since 1997, the company has successfully operated on the Macedonian market and has become a recognizable brand offering high-quality services.",
+        "The modern design and high quality of the products reflect the goal of following the latest European trends while offering modern, functional and reliable bathroom solutions."
+      ],
+      "brands": "The product range includes renowned Italian, Slovenian and Croatian manufacturers, including CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES and AQUAESTIL."
+    },
+    "services": {
+      "title": "Services",
+      "body": [
+        "Professional service and strong technical knowledge of the products are key characteristics of the ArtAqua brand.",
+        "For products bought in the showroom, ArtAqua offers free delivery to your home in Skopje and professional installation.",
+        "In addition to sales and installation, the company can carry out the complete process of bathroom reconstruction in all of its stages.",
+        "ArtAqua installs hydro and aero massage systems and additional acrylic bath tub equipment such as underwater spotlights, heaters, chromotherapy and electronic displays."
+      ]
+    },
+    "productPreview": {
+      "title": "Products for complete bathroom equipment",
+      "description": "The offer includes sanitary ware, bath tubs, shower trays, hydro massage systems, shower enclosures, bathroom furniture, taps, showers and accessories.",
+      "action": "All products"
+    },
+    "contactCta": {
+      "title": "Visit the showroom",
+      "description": "The ArtAqua showroom is in Taftalidze, at Moskovska Street No. 24, unit 1, opposite the Goce Delchev student residential complex.",
+      "action": "Contact information"
+    }
+  },
+  "products": {
+    "title": "Products",
+    "intro": "All six categories from the old website are preserved and ready for a modern one-page product presentation.",
+    "categories": [
+      {
+        "id": "bath-shower-trays-hydromassage",
+        "title": "Bath tubs, shower trays and hydromassage systems",
+        "shortDescription": "Bath tubs and shower trays made of 100% sanitary acrylic, with hydro and aero massage systems, aromatherapy and chromotherapy options.",
+        "referenceImage": "reference/old-site/images/bath-shower-trays-hydromassage_img_gall_21_af1c14e1.jpg"
+      },
+      {
+        "id": "shower-enclosures",
+        "title": "Shower enclosures",
+        "shortDescription": "Shower enclosures made of tempered safety glass, hardened at high temperature and aligned with European standards.",
+        "referenceImage": "reference/old-site/images/shower-enclosures_img_gall_1_8cfc0945.png"
+      },
+      {
+        "id": "sanitary-ware",
+        "title": "Sanitary ware",
+        "shortDescription": "High-quality sanitary ware made from material known locally as porcelain and internationally as vitreous china.",
+        "referenceImage": "reference/old-site/images/sanitary-ware_img_gall_1_57510329.png"
+      },
+      {
+        "id": "bathroom-furniture",
+        "title": "Bathroom furniture",
+        "shortDescription": "Bathroom furniture made from MDF with durable final protection, PVC laminate or multiple layers of high-quality polyurethane finish.",
+        "referenceImage": "reference/old-site/images/bathroom-furniture_img_gall_1_a5a803a3.png"
+      },
+      {
+        "id": "taps-showers",
+        "title": "Taps and showers",
+        "shortDescription": "Chromium-plated brass taps with quality cartridge mechanisms that influence durability and warranty length.",
+        "referenceImage": "reference/old-site/images/taps-showers_img_gall_1_5132fafc.png"
+      },
+      {
+        "id": "accessories",
+        "title": "Accessories",
+        "shortDescription": "Bathroom accessories made of brass with quality chromium-plating that preserves strength, finish and shine.",
+        "referenceImage": "reference/old-site/images/accessories_img_gall_1_8e8e6099.png"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Contact information for the ArtAqua showroom and PostModerna company.",
+    "showroom": "ArtAqua",
+    "company": "PostModerna Ltd.",
+    "address": "Moskovska Street No. 24, unit 1, Skopje, Macedonia",
+    "locationNote": "Taftalidze, opposite the Goce Delchev student residential complex",
+    "workingHoursTitle": "Working hours",
+    "phones": [
+      {
+        "label": "Telephone",
+        "value": "++389 (0)2 3075 900"
+      },
+      {
+        "label": "Telefax",
+        "value": "++389 (0)2 3075 901"
+      },
+      {
+        "label": "Mobile",
+        "value": "++389 (0)70 322 600"
+      }
+    ],
+    "emails": [
+      {
+        "label": "Sales department",
+        "user": "info",
+        "domain": "artaqua.com.mk"
+      },
+      {
+        "label": "Supply department",
+        "user": "info",
+        "domain": "postmoderna.com.mk"
+      }
+    ],
+    "workingHours": [
+      {
+        "label": "Monday-Friday",
+        "value": "09:00-18:00"
+      },
+      {
+        "label": "Saturday",
+        "value": "09:00-15:00"
+      }
+    ],
+    "form": {
+      "title": "Contact form",
+      "description": "The form will be connected to a Nuxt server API and Nodemailer in a later phase.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send message"
+    }
+  },
+  "common": {
+    "buttons": {
+      "viewProducts": "View products",
+      "contact": "Contact",
+      "backHome": "Back home"
+    },
+    "labels": {
+      "language": "Language",
+      "referenceImage": "Reference image",
+      "notImplemented": "To be implemented in a later phase"
+    }
+  }
+}

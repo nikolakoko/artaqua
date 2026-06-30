@@ -1,0 +1,28 @@
+URL: https://artaqua.com.mk/za_nas.php
+Title: Artaqua - Za Nas
+Meta: ART AQUA e brend na firmata PostModerna, koja e megju prvite firmi vo Makedonija specijalizirana za opremuvanje na banji
+Language: 
+
+Headings:
+
+Navigation:
+- -> https://artaqua.com.mk/index.php
+- -> https://artaqua.com.mk/za_nas.php
+- КАДИ/ТУШ КАДИ И ХИДРОМАСАЖНИ СИСТЕМИ -> https://artaqua.com.mk/tus_kadi.php
+- ТУШ КАБИНИ -> https://artaqua.com.mk/tus_kabini.php
+- САНИТАРИЈА -> https://artaqua.com.mk/sanitarija.php
+- МЕБЕЛ ЗА БАЊИ -> https://artaqua.com.mk/mebel_banji.php
+- БАТЕРИИ И ТУШЕВИ -> https://artaqua.com.mk/baterii.php
+- ГАЛАНТЕРИЈА -> https://artaqua.com.mk/galanterija.php
+- -> https://artaqua.com.mk/uslugi.php
+- -> https://artaqua.com.mk/kontakt.php
+- ПОЧЕТНА -> https://artaqua.com.mk/index.php
+- ЗА НАС -> https://artaqua.com.mk/za_nas.php
+- ПРОИЗВОДИ -> https://artaqua.com.mk/za_nas.php#
+- УСЛУГИ -> https://artaqua.com.mk/uslugi.php
+- КОНТАКТ -> https://artaqua.com.mk/kontakt.php
+
+Forms:
+
+Visible text:
+ART AQUA е бренд на фирмата ПостМодерна, која е меѓу првите фирми во Македонија специјализирана за опремување на бањи (увоз, трговија и комплетна изведба). Од 1997 година успешно опстојува на македонскиот пазар и веќе е препознатлив бренд кој нуди висок и гарантиран квалитет на своите услуги. Модерниот дизајн и високиот квалитет на нашите производи ја потврдуваат нашата цел секогаш да бидеме во тек со најновите трендови на европскиот пазар и да понудиме на купувачите модерен, квалитетен и функционален производ. Нудиме голем избор на санитарија, кади, хидромасажни системи, туш кабини и туш кади, мебел за бањи, батерии,тушеви и галантерија. Благодарение на децениското искуство, најпрепознатливи сме по тоа што секогаш инсистираме на опрема која е внимателно избрана по квалитет и модерен дизајн. Широкиот асортиман на производи е од реномирани италијански производители (CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI и др.), словенечки производители (KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES и др.) и познатиот хрватски производител AQUAESTIL. Професионалната услуга и, што е многу важно, познавањето на техничките карактеристики на тоа што го нудиме се главна карактеристика на нашиот бренд ART AQUA. Нашиот стручен и работен потенцијал и долгогодишното искуство ви дава гаранција дека ќе ги исполниме Вашите очекувања. Вашата бања е место каде што ја одржувате Вашата лична хигиена, извор на здравје, огледало на вашиот дом. Но исто така, Вашата бања може да е и катче во кое може неверојатно да уживате во танц со водата. Copyright ARTAQUA © 2012. Developed by Globalnet ПОЧЕТНА ЗА НАС ПРОИЗВОДИ УСЛУГИ КОНТАКТ

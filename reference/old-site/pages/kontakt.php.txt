@@ -1,0 +1,34 @@
+URL: https://artaqua.com.mk/kontakt.php
+Title: Artaqua - Kontakt
+Meta: ART AQUA e brend na firmata PostModerna, koja e megju prvite firmi vo Makedonija specijalizirana za opremuvanje na banji
+Language: 
+
+Headings:
+
+Navigation:
+- -> https://artaqua.com.mk/index.php
+- -> https://artaqua.com.mk/za_nas.php
+- КАДИ/ТУШ КАДИ И ХИДРОМАСАЖНИ СИСТЕМИ -> https://artaqua.com.mk/tus_kadi.php
+- ТУШ КАБИНИ -> https://artaqua.com.mk/tus_kabini.php
+- САНИТАРИЈА -> https://artaqua.com.mk/sanitarija.php
+- МЕБЕЛ ЗА БАЊИ -> https://artaqua.com.mk/mebel_banji.php
+- БАТЕРИИ И ТУШЕВИ -> https://artaqua.com.mk/baterii.php
+- ГАЛАНТЕРИЈА -> https://artaqua.com.mk/galanterija.php
+- -> https://artaqua.com.mk/uslugi.php
+- -> https://artaqua.com.mk/kontakt.php
+- ПОЧЕТНА -> https://artaqua.com.mk/index.php
+- ЗА НАС -> https://artaqua.com.mk/za_nas.php
+- ПРОИЗВОДИ -> https://artaqua.com.mk/kontakt.php#
+- УСЛУГИ -> https://artaqua.com.mk/uslugi.php
+- КОНТАКТ -> https://artaqua.com.mk/kontakt.php
+
+Forms:
+- POST https://artaqua.com.mk/send_form.php
+  - input text name=ime id= placeholder= label= value=
+  - input text name=prezime id= placeholder= label= value=
+  - input text name=email id= placeholder= label= value=
+  - textarea  name=comment id= placeholder= label= value=
+  - input submit name=submit id= placeholder= label= value=
+
+Visible text:
+Продажен салон : ART AQUA Фирма : Пост Модерна доо Адреса : ул. Московска, бр. 24, лок. 1 Скопје, МАКЕДОНИЈА Локација : Тафталиџе, спроти студентскиот дом “Гоце Делчев” Телефон : ++ 389 (0)2 3075 900 Телефакс : ++ 389 (0)2 3075 901 Мобил : ++ 389 (0)70 322 600 Е-маил : info@artaqua.com.mk - (за клиенти) info@postmoderna.com.mk - (за добавувачи) Работно Време : пон-пет : од 09-00 до 19:00 саб : од 09-00 до 15:00 First Name: Last Name: E-mail: Comment: Copyright ARTAQUA © 2012. Developed by Globalnet ПОЧЕТНА ЗА НАС ПРОИЗВОДИ УСЛУГИ КОНТАКТ
