@@ -2,9 +2,11 @@
 const props = withDefaults(defineProps<{
   to?: string
   href?: string
+  type?: 'button' | 'submit'
   variant?: 'primary' | 'secondary' | 'ghost'
   size?: 'sm' | 'md'
 }>(), {
+  type: 'button',
   variant: 'primary',
   size: 'md'
 })
@@ -39,7 +41,7 @@ const classes = computed(() => {
   </a>
   <button
     v-else
-    type="button"
+    :type="type"
     :class="classes"
   >
     <slot />

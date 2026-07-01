@@ -3,43 +3,22 @@ type ContactItem = {
   label: unknown
   value: unknown
 }
-
-type EmailItem = {
-  label: unknown
-  user: unknown
-  domain: unknown
-}
-
-type ResolvedEmailItem = {
-  user: string
-  domain: string
-}
-
 const { t, tm } = useI18n()
 const { resolveMessage } = useI18nResolved()
 const localePath = useLocalePath()
 
 const year = new Date().getFullYear()
-const phones = computed(() => (tm('contact.phones') as ContactItem[]).map(phone => ({
-  label: resolveMessage(phone.label),
-  value: resolveMessage(phone.value)
-})))
-const emails = computed(() => (tm('contact.emails') as EmailItem[]).map(email => ({
-  label: resolveMessage(email.label),
-  user: resolveMessage(email.user),
-  domain: resolveMessage(email.domain)
-})))
+
 const workingHours = computed(() => (tm('contact.workingHours') as ContactItem[]).map(item => ({
   label: resolveMessage(item.label),
   value: resolveMessage(item.value)
 })))
+
 const quickLinks = computed(() => [
   { label: t('nav.home'), to: localePath('/') },
   { label: t('nav.products'), to: localePath('/products') },
   { label: t('nav.contact'), to: localePath('/contact') }
 ])
-
-const formatEmail = (email: ResolvedEmailItem) => `${email.user}@${email.domain}`
 </script>
 
 <template>
@@ -78,33 +57,16 @@ const formatEmail = (email: ResolvedEmailItem) => `${email.user}@${email.domain}
 
       <section>
         <h2 class="text-sm font-semibold uppercase tracking-wide text-cyan-200">
-          {{ t('footer.contactTitle') }}
+          {{ t('footer.location') }}
         </h2>
         <div class="mt-4 space-y-3 text-sm leading-6 text-slate-300">
           <p>{{ t('contact.address') }}</p>
-          <p>{{ t('contact.locationNote') }}</p>
-          <div>
-            <p
-              v-for="phone in phones"
-              :key="phone.label"
-            >
-              <span class="text-slate-400">{{ phone.label }}:</span> {{ phone.value }}
-            </p>
-          </div>
-          <div>
-            <p
-              v-for="email in emails"
-              :key="formatEmail(email)"
-            >
-              <span class="text-slate-400">{{ email.label }}:</span>
-              <a
-                :href="`mailto:${formatEmail(email)}`"
-                class="text-cyan-100 transition hover:text-white"
-              >
-                {{ formatEmail(email) }}
-              </a>
-            </p>
-          </div>
+        </div>
+        <br>
+        <h2 class="text-sm font-semibold uppercase tracking-wide text-cyan-200">
+          {{ t('footer.workingTime') }}
+        </h2>
+        <div class="mt-4 space-y-3 text-sm leading-6 text-slate-300">
           <div>
             <p
               v-for="item in workingHours"

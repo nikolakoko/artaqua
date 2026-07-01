@@ -1,41 +1,9 @@
 <script setup lang="ts">
+import ContactForm from '~/components/contact/ContactForm.vue'
+import ContactInfo from '~/components/contact/ContactInfo.vue'
 import SectionTitle from '~/components/ui/SectionTitle.vue'
 
-type ContactItem = {
-  label: unknown
-  value: unknown
-}
-
-type EmailItem = {
-  label: unknown
-  user: unknown
-  domain: unknown
-}
-
-type ResolvedEmailItem = {
-  user: string
-  domain: string
-}
-
-const { t, tm } = useI18n()
-const { resolveMessage } = useI18nResolved()
-
-const phones = computed(() => (tm('contact.phones') as ContactItem[]).map(phone => ({
-  label: resolveMessage(phone.label),
-  value: resolveMessage(phone.value)
-})))
-const emails = computed(() => (tm('contact.emails') as EmailItem[]).map(email => ({
-  label: resolveMessage(email.label),
-  user: resolveMessage(email.user),
-  domain: resolveMessage(email.domain)
-})))
-const workingHours = computed(() => (tm('contact.workingHours') as ContactItem[]).map(item => ({
-  label: resolveMessage(item.label),
-  value: resolveMessage(item.value)
-})))
-
-const formatEmail = (email: ResolvedEmailItem) => `${email.user}@${email.domain}`
-
+const { t } = useI18n()
 useSeoMeta({
   title: () => t('seo.contact.title'),
   description: () => t('seo.contact.description')
@@ -43,76 +11,23 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-    <SectionTitle
-      as="h1"
-      :title="t('contact.title')"
-      :description="t('contact.intro')"
-    />
+  <div>
+    <section class="border-b border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f7f5f1_100%)] py-14 sm:py-18">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionTitle
+          as="h1"
+          :eyebrow="t('contact.eyebrow')"
+          :title="t('contact.title')"
+          :description="t('contact.intro')"
+        />
+      </div>
+    </section>
 
-    <div class="mt-10 grid gap-6 lg:grid-cols-3">
-      <section class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm lg:col-span-1">
-        <h2 class="text-xl font-semibold text-slate-950">
-          {{ t('contact.showroom') }}
-        </h2>
-        <div class="mt-4 space-y-3 leading-7 text-slate-700">
-          <p>{{ t('contact.company') }}</p>
-          <p>{{ t('contact.address') }}</p>
-          <p>{{ t('contact.locationNote') }}</p>
-        </div>
-      </section>
-
-      <section class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm lg:col-span-1">
-        <h2 class="text-xl font-semibold text-slate-950">
-          {{ t('nav.contact') }}
-        </h2>
-        <div class="mt-4 space-y-3 leading-7 text-slate-700">
-          <p
-            v-for="phone in phones"
-            :key="phone.label"
-          >
-            <strong>{{ phone.label }}:</strong> {{ phone.value }}
-          </p>
-          <p
-            v-for="email in emails"
-            :key="formatEmail(email)"
-          >
-            <strong>{{ email.label }}:</strong>
-            <a
-              :href="`mailto:${formatEmail(email)}`"
-              class="text-cyan-800 hover:text-cyan-950"
-            >
-              {{ formatEmail(email) }}
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm lg:col-span-1">
-        <h2 class="text-xl font-semibold text-slate-950">
-          {{ t('contact.workingHoursTitle') }}
-        </h2>
-        <div class="mt-4 space-y-3 leading-7 text-slate-700">
-          <p
-            v-for="item in workingHours"
-            :key="item.label"
-          >
-            <strong>{{ item.label }}:</strong> {{ item.value }}
-          </p>
-        </div>
-      </section>
-    </div>
-
-    <section class="mt-6 rounded-lg border border-dashed border-cyan-300 bg-cyan-50/60 p-6">
-      <h2 class="text-xl font-semibold text-slate-950">
-        {{ t('contact.form.title') }}
-      </h2>
-      <p class="mt-3 text-slate-700">
-        {{ t('contact.form.description') }}
-      </p>
-      <p class="mt-4 text-sm font-medium text-cyan-900">
-        {{ t('common.labels.notImplemented') }}
-      </p>
+    <section class="bg-stone-50 py-14 sm:py-18">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.95fr] lg:px-8">
+        <ContactInfo />
+        <ContactForm />
+      </div>
     </section>
   </div>
 </template>

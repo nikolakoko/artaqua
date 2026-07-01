@@ -175,25 +175,35 @@
     ]
   },
   "contact": {
+    "eyebrow": "Contact",
     "title": "Contact",
-    "intro": "Contact information for the ArtAqua showroom and PostModerna company.",
+    "intro": "Contact information for the ArtAqua showroom and PostModerna company, with a frontend form prepared for the next email phase.",
     "showroom": "ArtAqua",
     "company": "PostModerna Ltd.",
-    "address": "Moskovska Street No. 24, unit 1, Skopje, Macedonia",
+    "address": "Moskovska Street No. 24, unit 1, Skopje",
     "locationNote": "Taftalidze, opposite the Goce Delchev student residential complex",
     "workingHoursTitle": "Working hours",
+    "info": {
+      "showroomTitle": "Showroom",
+      "phoneTitle": "Phones",
+      "emailTitle": "Email"
+    },
+    "map": {
+      "title": "Showroom location",
+      "description": "An interactive map will be added later. The showroom is in Taftalidze, opposite the Goce Delchev student residential complex."
+    },
     "phones": [
       {
         "label": "Telephone",
-        "value": "++389 (0)2 3075 900"
+        "value": "+389 (0)2 3075 900"
       },
       {
-        "label": "Telefax",
-        "value": "++389 (0)2 3075 901"
+        "label": "Fax",
+        "value": "+389 (0)2 3075 901"
       },
       {
         "label": "Mobile",
-        "value": "++389 (0)70 322 600"
+        "value": "+389 (0)70 322 600"
       }
     ],
     "emails": [
@@ -219,19 +229,45 @@
       }
     ],
     "form": {
+      "eyebrow": "Message",
       "title": "Contact form",
-      "description": "The form will be connected to a Nuxt server API and Nodemailer in a later phase.",
-      "firstName": "First name",
-      "lastName": "Last name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send message"
+      "description": "Prepare a question or comment. Email sending will be connected in the next phase.",
+      "fields": {
+        "firstName": {
+          "label": "First name",
+          "placeholder": "Your first name"
+        },
+        "lastName": {
+          "label": "Last name",
+          "placeholder": "Your last name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "name{'@'}example.com"
+        },
+        "phone": {
+          "label": "Phone (optional)",
+          "placeholder": "+389 ..."
+        },
+        "message": {
+          "label": "Message / comment",
+          "placeholder": "Tell us what you need for your bathroom..."
+        }
+      },
+      "errors": {
+        "required": "This field is required.",
+        "email": "Enter a valid email address."
+      },
+      "requiredNote": "First name, last name, email and message are required.",
+      "pendingBackendMessage": "The form UI is ready, but email sending will be connected in the next phase.",
+      "submit": "Prepare message"
     }
   },
   "footer": {
     "tagline": "A modern bathroom showroom for sanitary equipment and professional solutions for your home.",
     "quickLinks": "Quick links",
-    "contactTitle": "Contact",
+    "location": "Location",
+    "workingTime": "Working hours",
     "business": "ArtAqua / PostModerna",
     "copyright": "© {year} ArtAqua. All rights reserved."
   },

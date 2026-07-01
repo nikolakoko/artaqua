@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import AboutSection from '~/components/sections/AboutSection.vue'
-import ContactCtaSection from '~/components/sections/ContactCtaSection.vue'
 import HeroSection from '~/components/sections/HeroSection.vue'
 import ProductPreviewSection from '~/components/sections/ProductPreviewSection.vue'
 import ServicesSection from '~/components/sections/ServicesSection.vue'
@@ -19,6 +18,5 @@ useSeoMeta({
     <AboutSection />
     <ServicesSection />
     <ProductPreviewSection />
-    <ContactCtaSection />
   </div>
 </template>
