@@ -208,12 +208,12 @@
     ],
     "emails": [
       {
-        "label": "Sales department",
+        "label": "Clients",
         "user": "info",
         "domain": "artaqua.com.mk"
       },
       {
-        "label": "Supply department",
+        "label": "Suppliers",
         "user": "info",
         "domain": "postmoderna.com.mk"
       }

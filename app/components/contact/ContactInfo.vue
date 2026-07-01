@@ -64,7 +64,7 @@ const formatTel = (value: string) => `tel:${value.replace(/[^\d+]/g, '')}`
       </div>
     </section>
 
-    <section class="grid gap-5 sm:grid-cols-2">
+    <section class="grid gap-4 sm:grid-cols-[43%_54.5%]">
       <div class="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
         <div class="flex items-center gap-3">
           <UIcon
@@ -141,7 +141,7 @@ const formatTel = (value: string) => `tel:${value.replace(/[^\d+]/g, '')}`
     </section>
 
     <section class="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
-      <div class="flex aspect-[16/9] min-h-64 flex-col items-center justify-center gap-3 bg-[linear-gradient(135deg,#f8fafc_0%,#ecfeff_52%,#f7f5f1_100%)] px-6 text-center">
+      <div class="flex aspect-video min-h-64 flex-col items-center justify-center gap-3 bg-[linear-gradient(135deg,#f8fafc_0%,#ecfeff_52%,#f7f5f1_100%)] px-6 text-center">
         <UIcon
           name="i-lucide-map"
           class="size-10 text-cyan-800/70"

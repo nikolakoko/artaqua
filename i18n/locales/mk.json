@@ -208,12 +208,12 @@
     ],
     "emails": [
       {
-        "label": "За клиенти",
+        "label": "Клиенти",
         "user": "info",
         "domain": "artaqua.com.mk"
       },
       {
-        "label": "За добавувачи",
+        "label": "Добавувачи",
         "user": "info",
         "domain": "postmoderna.com.mk"
       }
