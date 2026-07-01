@@ -31,7 +31,7 @@
       "description": "ArtAqua е бренд на PostModerna, една од првите фирми во Македонија специјализирани за опремување на бањи, увоз, трговија и комплетна изведба.",
       "primaryAction": "Погледнете производи",
       "secondaryAction": "Контактирајте не",
-      "image": "/images/showroom/artaqua-showroom-main.png",
+      "image": "",
       "imageAlt": "Продажен салон ArtAqua со изложени кади и санитарна опрема",
       "highlights": [
         "Од 1997 година",
@@ -48,7 +48,7 @@
         "Модерниот дизајн и високиот квалитет на производите ја потврдуваат нашата цел секогаш да бидеме во тек со најновите трендови на европскиот пазар."
       ],
       "brands": "Широкиот асортиман вклучува производи од реномирани италијански, словенечки и хрватски производители, меѓу кои CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES и AQUAESTIL.",
-      "image": "/images/showroom/artaqua-showroom-sanitary.png",
+      "image": "",
       "imageAlt": "Дел од продажниот салон ArtAqua со санитарна опрема и мебел за бањи"
     },
     "services": {
@@ -98,44 +98,79 @@
     }
   },
   "products": {
+    "eyebrow": "Асортиман",
     "title": "Производи",
-    "intro": "Сите шест категории од старата веб-страница се задржани и подготвени за модерна презентација на една страница.",
+    "intro": "Преглед на шесте главни категории производи за целосно опремување на бања, подготвени за јасна презентација на една страница.",
+    "ctaEyebrow": "Посета на салон",
+    "ctaTitle": "Изберете опрема со стручна насока",
+    "ctaDescription": "За точен избор, технички детали и достапни решенија, контактирајте го продажниот салон ArtAqua.",
+    "ctaAction": "Контактирајте не",
     "categories": [
       {
         "id": "bath-shower-trays-hydromassage",
         "title": "Кади, туш кади и хидромасажни системи",
         "shortDescription": "Кади и туш кади од 100% акрил, со можност за хидро и аеро масажни системи, ароматерапија и хромотерапија.",
-        "referenceImage": "/images/products/bath-shower-trays.png"
+        "details": [
+          "100% санитарен акрил",
+          "Хидро и аеро масажни системи",
+          "Ароматерапија и хромотерапија"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "shower-enclosures",
         "title": "Туш кабини",
         "shortDescription": "Туш кабини од калено сигурносно стакло, обработено на висока температура и усогласено со европски стандарди.",
-        "referenceImage": "/images/products/shower-enclosures.png"
+        "details": [
+          "Калено сигурносно стакло",
+          "Обработка на висока температура",
+          "Усогласено со европски стандарди"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "sanitary-ware",
         "title": "Санитарија",
         "shortDescription": "Санитарија од висококвалитетен материјал познат како порцелан, односно vitreous china, со траен квалитет.",
-        "referenceImage": "/images/products/sanitary-ware.jpg"
+        "details": [
+          "Висококвалитетен материјал",
+          "Vitreous china",
+          "Траен квалитет"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "bathroom-furniture",
         "title": "Мебел за бањи",
         "shortDescription": "Мебел за бањи од МДФ со квалитетна завршна заштита, ПВЦ фолија или повеќе слоеви полиуретанска боја.",
-        "referenceImage": "/images/products/bathroom-furniture.jpg"
+        "details": [
+          "МДФ основа",
+          "ПВЦ фолија или полиуретанска заштита",
+          "Квалитетен завршен изглед"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "taps-showers",
         "title": "Батерии и тушеви",
         "shortDescription": "Батерии изработени од хромиран месинг, со квалитетен механизам кој влијае на трајноста и гаранцијата.",
-        "referenceImage": "/images/products/taps-showers.png"
+        "details": [
+          "Хромиран месинг",
+          "Квалитетен механизам",
+          "Трајност и гаранција според механизмот"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "accessories",
         "title": "Галантерија",
         "shortDescription": "Галантерија од месинг со квалитетна хромирана обработка, која ја зачувува цврстината, бојата и сјајот.",
-        "referenceImage": "/images/products/accessories.png"
+        "details": [
+          "Месинг основа",
+          "Квалитетна хромирана обработка",
+          "Зачувана цврстина, боја и сјај"
+        ],
+        "referenceImage": ""
       }
     ]
   },
@@ -209,6 +244,7 @@
     "labels": {
       "language": "Јазик",
       "referenceImage": "Референтна слика",
+      "imagePlaceholder": "Слика ќе биде додадена подоцна",
       "notImplemented": "Ќе се имплементира во следна фаза"
     }
   }

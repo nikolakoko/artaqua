@@ -2,9 +2,17 @@
 import BaseButton from '~/components/ui/BaseButton.vue'
 
 const { t, tm } = useI18n()
+const { resolveMessageArray } = useI18nResolved()
 const localePath = useLocalePath()
 
-const highlights = computed(() => tm('home.hero.highlights') as string[])
+const imageFailed = ref(false)
+const imageSrc = computed(() => t('home.hero.image').trim())
+const showImage = computed(() => Boolean(imageSrc.value) && !imageFailed.value)
+const highlights = computed(() => resolveMessageArray(tm('home.hero.highlights')))
+
+watch(imageSrc, () => {
+  imageFailed.value = false
+})
 </script>
 
 <template>
@@ -52,10 +60,24 @@ const highlights = computed(() => tm('home.hero.highlights') as string[])
       <div class="relative">
         <figure class="relative overflow-hidden rounded-lg border border-white bg-white shadow-2xl shadow-slate-950/12">
           <img
+            v-if="showImage"
             :src="t('home.hero.image')"
             :alt="t('home.hero.imageAlt')"
             class="aspect-[4/3] w-full object-cover"
+            @error="imageFailed = true"
           >
+          <div
+            v-else
+            class="flex aspect-[4/3] w-full flex-col items-center justify-center gap-3 bg-[linear-gradient(135deg,#f8fafc_0%,#ecfeff_52%,#f5f5f4_100%)] px-6 text-center"
+          >
+            <UIcon
+              name="i-lucide-image-off"
+              class="size-10 text-cyan-800/70"
+            />
+            <p class="text-sm font-medium text-slate-600">
+              {{ t('common.labels.imagePlaceholder') }}
+            </p>
+          </div>
         </figure>
       </div>
     </div>

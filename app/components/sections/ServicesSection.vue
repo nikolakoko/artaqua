@@ -2,13 +2,17 @@
 import SectionTitle from '~/components/ui/SectionTitle.vue'
 
 type ServiceItem = {
-  title: string
-  description: string
+  title: unknown
+  description: unknown
 }
 
 const { t, tm } = useI18n()
+const { resolveMessage } = useI18nResolved()
 
-const services = computed(() => tm('home.services.items') as ServiceItem[])
+const services = computed(() => (tm('home.services.items') as ServiceItem[]).map(service => ({
+  title: resolveMessage(service.title),
+  description: resolveMessage(service.description)
+})))
 </script>
 
 <template>

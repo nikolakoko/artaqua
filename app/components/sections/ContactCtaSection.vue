@@ -3,23 +3,39 @@ import BaseButton from '~/components/ui/BaseButton.vue'
 import SectionTitle from '~/components/ui/SectionTitle.vue'
 
 type ContactItem = {
-  label: string
-  value: string
+  label: unknown
+  value: unknown
 }
 
 type EmailItem = {
-  label: string
+  label: unknown
+  user: unknown
+  domain: unknown
+}
+
+type ResolvedEmailItem = {
   user: string
   domain: string
 }
 
 const { t, tm } = useI18n()
+const { resolveMessage } = useI18nResolved()
 const localePath = useLocalePath()
 
-const phones = computed(() => tm('contact.phones') as ContactItem[])
-const emails = computed(() => tm('contact.emails') as EmailItem[])
-const workingHours = computed(() => tm('contact.workingHours') as ContactItem[])
-const formatEmail = (email: EmailItem) => `${email.user}@${email.domain}`
+const phones = computed(() => (tm('contact.phones') as ContactItem[]).map(phone => ({
+  label: resolveMessage(phone.label),
+  value: resolveMessage(phone.value)
+})))
+const emails = computed(() => (tm('contact.emails') as EmailItem[]).map(email => ({
+  label: resolveMessage(email.label),
+  user: resolveMessage(email.user),
+  domain: resolveMessage(email.domain)
+})))
+const workingHours = computed(() => (tm('contact.workingHours') as ContactItem[]).map(item => ({
+  label: resolveMessage(item.label),
+  value: resolveMessage(item.value)
+})))
+const formatEmail = (email: ResolvedEmailItem) => `${email.user}@${email.domain}`
 </script>
 
 <template>

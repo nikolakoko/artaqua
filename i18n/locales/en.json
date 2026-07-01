@@ -31,7 +31,7 @@
       "description": "ArtAqua is a PostModerna brand and one of the first companies in Macedonia specialized in designer bathroom equipment, import, trade and installation.",
       "primaryAction": "View products",
       "secondaryAction": "Contact us",
-      "image": "/images/showroom/artaqua-showroom-main.png",
+      "image": "",
       "imageAlt": "ArtAqua showroom with displayed bath tubs and sanitary equipment",
       "highlights": [
         "Since 1997",
@@ -48,7 +48,7 @@
         "The modern design and high quality of the products reflect the goal of following the latest European trends while offering modern, functional and reliable bathroom solutions."
       ],
       "brands": "The product range includes renowned Italian, Slovenian and Croatian manufacturers, including CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES and AQUAESTIL.",
-      "image": "/images/showroom/artaqua-showroom-sanitary.png",
+      "image": "",
       "imageAlt": "Part of the ArtAqua showroom with sanitary equipment and bathroom furniture"
     },
     "services": {
@@ -98,44 +98,79 @@
     }
   },
   "products": {
+    "eyebrow": "Assortment",
     "title": "Products",
-    "intro": "All six categories from the old website are preserved and ready for a modern one-page product presentation.",
+    "intro": "An overview of the six main product categories for complete bathroom equipment, prepared as a clear one-page product presentation.",
+    "ctaEyebrow": "Showroom visit",
+    "ctaTitle": "Choose bathroom equipment with expert guidance",
+    "ctaDescription": "For the right selection, technical details and available solutions, contact the ArtAqua showroom.",
+    "ctaAction": "Contact us",
     "categories": [
       {
         "id": "bath-shower-trays-hydromassage",
         "title": "Bath tubs, shower trays and hydromassage systems",
         "shortDescription": "Bath tubs and shower trays made of 100% sanitary acrylic, with hydro and aero massage systems, aromatherapy and chromotherapy options.",
-        "referenceImage": "/images/products/bath-shower-trays.png"
+        "details": [
+          "100% sanitary acrylic",
+          "Hydro and aero massage systems",
+          "Aromatherapy and chromotherapy"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "shower-enclosures",
         "title": "Shower enclosures",
         "shortDescription": "Shower enclosures made of tempered safety glass, hardened at high temperature and aligned with European standards.",
-        "referenceImage": "/images/products/shower-enclosures.png"
+        "details": [
+          "Tempered safety glass",
+          "High-temperature processing",
+          "Aligned with European standards"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "sanitary-ware",
         "title": "Sanitary ware",
         "shortDescription": "High-quality sanitary ware made from material known locally as porcelain and internationally as vitreous china.",
-        "referenceImage": "/images/products/sanitary-ware.jpg"
+        "details": [
+          "High-quality material",
+          "Vitreous china",
+          "Long-lasting quality"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "bathroom-furniture",
         "title": "Bathroom furniture",
         "shortDescription": "Bathroom furniture made from MDF with durable final protection, PVC laminate or multiple layers of high-quality polyurethane finish.",
-        "referenceImage": "/images/products/bathroom-furniture.jpg"
+        "details": [
+          "MDF base",
+          "PVC laminate or polyurethane protection",
+          "Quality final appearance"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "taps-showers",
         "title": "Taps and showers",
         "shortDescription": "Chromium-plated brass taps with quality cartridge mechanisms that influence durability and warranty length.",
-        "referenceImage": "/images/products/taps-showers.png"
+        "details": [
+          "Chromium-plated brass",
+          "Quality cartridge mechanism",
+          "Durability and warranty based on mechanism"
+        ],
+        "referenceImage": ""
       },
       {
         "id": "accessories",
         "title": "Accessories",
         "shortDescription": "Bathroom accessories made of brass with quality chromium-plating that preserves strength, finish and shine.",
-        "referenceImage": "/images/products/accessories.png"
+        "details": [
+          "Brass base",
+          "Quality chromium-plated finish",
+          "Preserved strength, color and shine"
+        ],
+        "referenceImage": ""
       }
     ]
   },
@@ -209,6 +244,7 @@
     "labels": {
       "language": "Language",
       "referenceImage": "Reference image",
+      "imagePlaceholder": "Image will be added later",
       "notImplemented": "To be implemented in a later phase"
     }
   }
