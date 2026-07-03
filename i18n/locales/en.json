@@ -231,7 +231,7 @@
     "form": {
       "eyebrow": "Message",
       "title": "Contact form",
-      "description": "Prepare a question or comment. Email sending will be connected in the next phase.",
+      "description": "Send a question or comment to the ArtAqua showroom.",
       "fields": {
         "firstName": {
           "label": "First name",
@@ -252,15 +252,21 @@
         "message": {
           "label": "Message / comment",
           "placeholder": "Tell us what you need for your bathroom..."
+        },
+        "website": {
+          "label": "Website"
         }
       },
       "errors": {
         "required": "This field is required.",
-        "email": "Enter a valid email address."
+        "email": "Enter a valid email address.",
+        "maxLength": "Enter no more than {max} characters."
       },
       "requiredNote": "First name, last name, email and message are required.",
-      "pendingBackendMessage": "The form UI is ready, but email sending will be connected in the next phase.",
-      "submit": "Prepare message"
+      "successMessage": "Your message has been sent. We will contact you as soon as possible.",
+      "errorMessage": "The message cannot be sent right now. Please try again or contact us by email.",
+      "submit": "Send message",
+      "submitting": "Sending..."
     }
   },
   "footer": {

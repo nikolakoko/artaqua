@@ -28,7 +28,7 @@ watch(imageSrc, () => {
 
 <template>
   <article class="group flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lg hover:shadow-slate-950/8">
-    <div class="flex aspect-[4/3] items-center justify-center bg-[linear-gradient(135deg,#f8fafc_0%,#ecfeff_52%,#f7f5f1_100%)] p-6">
+    <div class="flex aspect-4/3 items-center justify-center bg-[linear-gradient(135deg,#f8fafc_0%,#ecfeff_52%,#f7f5f1_100%)] p-6">
       <img
         v-if="showImage"
         :src="imageSrc"

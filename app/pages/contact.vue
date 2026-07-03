@@ -24,7 +24,7 @@ useSeoMeta({
     </section>
 
     <section class="bg-stone-50 py-14 sm:py-18">
-      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_0.95fr] lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:px-8">
         <ContactInfo />
         <ContactForm />
       </div>

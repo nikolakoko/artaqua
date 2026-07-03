@@ -3,6 +3,7 @@ const props = withDefaults(defineProps<{
   to?: string
   href?: string
   type?: 'button' | 'submit'
+  disabled?: boolean
   variant?: 'primary' | 'secondary' | 'ghost'
   size?: 'sm' | 'md'
 }>(), {
@@ -20,7 +21,9 @@ const classes = computed(() => {
     ghost: 'text-cyan-950 hover:bg-cyan-50'
   }
 
-  return [base, size, variants[props.variant]].join(' ')
+  const disabled = props.disabled ? 'cursor-not-allowed opacity-60' : ''
+
+  return [base, size, variants[props.variant], disabled].join(' ')
 })
 </script>
 
@@ -42,6 +45,7 @@ const classes = computed(() => {
   <button
     v-else
     :type="type"
+    :disabled="disabled"
     :class="classes"
   >
     <slot />

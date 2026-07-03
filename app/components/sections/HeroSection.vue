@@ -63,12 +63,12 @@ watch(imageSrc, () => {
             v-if="showImage"
             :src="t('home.hero.image')"
             :alt="t('home.hero.imageAlt')"
-            class="aspect-[4/3] w-full object-cover"
+            class="aspect-4/3 w-full object-cover"
             @error="imageFailed = true"
           >
           <div
             v-else
-            class="flex aspect-[4/3] w-full flex-col items-center justify-center gap-3 bg-[linear-gradient(135deg,#f8fafc_0%,#ecfeff_52%,#f5f5f4_100%)] px-6 text-center"
+            class="flex aspect-4/3 w-full flex-col items-center justify-center gap-3 bg-[linear-gradient(135deg,#f8fafc_0%,#ecfeff_52%,#f5f5f4_100%)] px-6 text-center"
           >
             <UIcon
               name="i-lucide-image-off"

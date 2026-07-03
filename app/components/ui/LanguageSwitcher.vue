@@ -12,7 +12,7 @@ const activeIndex = computed(() => locales.findIndex(item => item.code === local
 
 <template>
   <div
-    class="relative inline-grid grid-cols-2 rounded-full border border-slate-200 bg-slate-100 p-1 shadow-inner shadow-slate-950/[0.04]"
+    class="relative inline-grid grid-cols-2 rounded-full border border-slate-200 bg-slate-100 p-1 shadow-inner shadow-slate-950/4"
     :aria-label="t('common.labels.language')"
   >
     <span

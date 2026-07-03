@@ -12,6 +12,16 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  runtimeConfig: {
+    smtpHost: '',
+    smtpPort: '',
+    smtpSecure: '',
+    smtpUser: '',
+    smtpPass: '',
+    mailFrom: '',
+    contactTo: ''
+  },
+
   routeRules: {
     '/': { prerender: true },
     '/en': { prerender: true },

@@ -26,7 +26,7 @@ watch(
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 shadow-sm shadow-slate-950/[0.03] backdrop-blur-xl">
+  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 shadow-sm shadow-slate-950/3 backdrop-blur-xl">
     <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
       <NuxtLink
         :to="localePath('/')"
@@ -36,7 +36,7 @@ watch(
         <img
           src="/logo/artaqua-logo-new.png"
           alt="ArtAqua PostModerna"
-          class="h-12 w-auto max-w-[172px] object-contain sm:h-14 sm:max-w-[210px]"
+          class="h-12 w-auto max-w-43 object-contain sm:h-14 sm:max-w-52.5"
         >
       </NuxtLink>
 
@@ -75,15 +75,15 @@ watch(
         >
           <span
             class="absolute left-0 top-0 h-0.5 w-5 rounded-full bg-current transition"
-            :class="isOpen && 'translate-y-[7px] rotate-45'"
+            :class="isOpen && 'translate-y-1.75 rotate-45'"
           />
           <span
-            class="absolute left-0 top-[7px] h-0.5 w-5 rounded-full bg-current transition"
+            class="absolute left-0 top-1.75 h-0.5 w-5 rounded-full bg-current transition"
             :class="isOpen && 'opacity-0'"
           />
           <span
             class="absolute bottom-0 left-0 h-0.5 w-5 rounded-full bg-current transition"
-            :class="isOpen && '-translate-y-[7px] -rotate-45'"
+            :class="isOpen && '-translate-y-1.75 -rotate-45'"
           />
         </span>
       </button>
@@ -91,7 +91,7 @@ watch(
 
     <div
       v-if="isOpen"
-      class="border-t border-slate-200 bg-white px-4 py-4 shadow-lg shadow-slate-950/[0.06] md:hidden"
+      class="border-t border-slate-200 bg-white px-4 py-4 shadow-lg shadow-slate-950/6 md:hidden"
     >
       <nav
         class="mx-auto flex max-w-7xl flex-col gap-2"
