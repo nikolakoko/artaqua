@@ -1,15 +1,22 @@
 <script setup lang="ts">
+import { socialLinks } from '~/data/socialLinks'
+
 type ContactItem = {
   label: unknown
   value: unknown
 }
+
 const { t, tm } = useI18n()
 const { resolveMessage } = useI18nResolved()
 const localePath = useLocalePath()
 
 const year = new Date().getFullYear()
 
-const workingHours = computed(() => (tm('contact.workingHours') as ContactItem[]).map(item => ({
+function resolveItems<T>(value: unknown): T[] {
+  return Array.isArray(value) ? value as T[] : []
+}
+
+const workingHours = computed(() => resolveItems<ContactItem>(tm('contact.workingHours')).map(item => ({
   label: resolveMessage(item.label),
   value: resolveMessage(item.value)
 })))
@@ -22,8 +29,8 @@ const quickLinks = computed(() => [
 </script>
 
 <template>
-  <footer class="border-t border-slate-200 bg-slate-950 text-slate-100">
-    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_0.8fr_1.2fr] lg:px-8">
+  <footer class="border-t border-slate-200 bg-slate-900 text-slate-100">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-8 sm:px-6 md:grid-cols-[1.2fr_0.8fr_1.2fr] lg:px-8">
       <section>
         <p class="text-xl font-semibold tracking-wide text-white">
           ArtAqua
@@ -53,6 +60,26 @@ const quickLinks = computed(() => [
             </NuxtLink>
           </li>
         </ul>
+
+        <h2 class="mt-8 text-sm font-semibold uppercase tracking-wide text-cyan-200">
+          {{ t('social.follow') }}
+        </h2>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a
+            v-for="link in socialLinks"
+            :key="link.id"
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex size-10 items-center justify-center rounded-full border border-white/10 text-slate-300 transition hover:border-cyan-200 hover:bg-white/10 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+            :aria-label="t(`social.${link.id}Aria`)"
+          >
+            <UIcon
+              :name="link.icon"
+              class="size-4"
+            />
+          </a>
+        </div>
       </section>
 
       <section>

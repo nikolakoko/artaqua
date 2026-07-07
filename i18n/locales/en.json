@@ -12,15 +12,15 @@
   },
   "seo": {
     "home": {
-      "title": "ArtAqua | PostModerna",
+      "title": "ArtAqua / PostModerna",
       "description": "ArtAqua is a PostModerna brand specialized in bathroom equipment, sanitary ware, shower enclosures, bath tubs, bathroom furniture and accessories."
     },
     "products": {
-      "title": "Products | ArtAqua",
+      "title": "Products / ArtAqua",
       "description": "Explore ArtAqua's six main product categories: bath tubs, shower enclosures, sanitary ware, bathroom furniture, taps and bathroom accessories."
     },
     "contact": {
-      "title": "Contact | ArtAqua",
+      "title": "Contact / ArtAqua",
       "description": "Contact information, address, phone numbers, email addresses and working hours for the ArtAqua showroom in Skopje."
     }
   },
@@ -105,6 +105,23 @@
     "ctaTitle": "Choose bathroom equipment with expert guidance",
     "ctaDescription": "For the right selection, technical details and available solutions, contact the ArtAqua showroom.",
     "ctaAction": "Contact us",
+    "modal": {
+      "eyebrow": "Category",
+      "close": "Close",
+      "previous": "Previous category",
+      "next": "Next category",
+      "back": "Back to products"
+    },
+    "gallery": {
+      "viewGallery": "View gallery",
+      "openGalleryFor": "Open gallery for {title}",
+      "imageCount": "{count} images",
+      "title": "{title} gallery",
+      "close": "Close gallery",
+      "previousImage": "Previous image",
+      "nextImage": "Next image",
+      "counter": "{current} / {total}"
+    },
     "categories": [
       {
         "id": "bath-shower-trays-hydromassage",
@@ -190,7 +207,8 @@
     },
     "map": {
       "title": "Showroom location",
-      "description": "An interactive map will be added later. The showroom is in Taftalidze, opposite the Goce Delchev student residential complex."
+      "description": "The showroom is in Taftalidze, opposite the Goce Delchev student residential complex.",
+      "iframeTitle": "Google map for ArtAqua / PostModerna"
     },
     "phones": [
       {
@@ -277,6 +295,13 @@
     "business": "ArtAqua / PostModerna",
     "copyright": "© {year} ArtAqua. All rights reserved."
   },
+  "social": {
+    "follow": "Social media",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "instagramAria": "Open the ArtAqua Instagram profile",
+    "facebookAria": "Open the ArtAqua Facebook page"
+  },
   "common": {
     "buttons": {
       "viewProducts": "View products",
@@ -284,6 +309,7 @@
       "backHome": "Back home"
     },
     "labels": {
+      "skipToContent": "Skip to content",
       "language": "Language",
       "referenceImage": "Reference image",
       "imagePlaceholder": "Image will be added later",

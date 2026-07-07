@@ -19,7 +19,10 @@ export default defineNuxtConfig({
     smtpUser: '',
     smtpPass: '',
     mailFrom: '',
-    contactTo: ''
+    contactTo: '',
+    public: {
+      siteUrl: 'https://artaqua.com.mk'
+    }
   },
 
   routeRules: {

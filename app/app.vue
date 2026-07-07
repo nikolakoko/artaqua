@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 
 useHead({
   meta: [
@@ -11,14 +11,6 @@ useHead({
   htmlAttrs: {
     lang: () => locale.value
   }
-})
-
-useSeoMeta({
-  title: () => t('seo.home.title'),
-  description: () => t('seo.home.description'),
-  ogTitle: () => t('seo.home.title'),
-  ogDescription: () => t('seo.home.description'),
-  twitterCard: 'summary_large_image'
 })
 </script>
 

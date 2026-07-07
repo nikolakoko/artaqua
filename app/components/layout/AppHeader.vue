@@ -26,7 +26,7 @@ watch(
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 shadow-sm shadow-slate-950/3 backdrop-blur-xl">
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-900 shadow-sm shadow-slate-900/20">
     <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
       <NuxtLink
         :to="localePath('/')"
@@ -36,7 +36,7 @@ watch(
         <img
           src="/logo/artaqua-logo-new.png"
           alt="ArtAqua PostModerna"
-          class="h-12 w-auto max-w-43 object-contain sm:h-14 sm:max-w-52.5"
+          class="h-[3.25rem] w-auto max-w-44 object-contain sm:h-[3.75rem] sm:max-w-54"
         >
       </NuxtLink>
 
@@ -50,8 +50,8 @@ watch(
           :to="item.to"
           class="rounded-full px-4 py-2 text-sm font-medium transition-colors"
           :class="isActive(item.to)
-            ? 'bg-cyan-950 text-white'
-            : 'text-slate-700 hover:bg-cyan-50 hover:text-cyan-950'"
+            ? 'bg-cyan-700 text-white'
+            : 'text-slate-200 hover:bg-white/10 hover:text-white'"
         >
           {{ item.label }}
         </NuxtLink>
@@ -63,7 +63,7 @@ watch(
 
       <button
         type="button"
-        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-800 transition hover:border-cyan-300 hover:bg-cyan-50 md:hidden"
+        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 text-slate-100 transition hover:border-cyan-300 hover:bg-white/10 md:hidden"
         :aria-label="isOpen ? t('header.closeMenu') : t('header.openMenu')"
         :aria-expanded="isOpen"
         @click="isOpen = !isOpen"
@@ -91,7 +91,7 @@ watch(
 
     <div
       v-if="isOpen"
-      class="border-t border-slate-200 bg-white px-4 py-4 shadow-lg shadow-slate-950/6 md:hidden"
+      class="border-t border-slate-800 bg-slate-900 px-4 py-4 shadow-lg shadow-slate-900/20 md:hidden"
     >
       <nav
         class="mx-auto flex max-w-7xl flex-col gap-2"
@@ -103,14 +103,14 @@ watch(
           :to="item.to"
           class="rounded-lg px-3 py-3 text-base font-medium transition"
           :class="isActive(item.to)
-            ? 'bg-cyan-950 text-white'
-            : 'text-slate-700 hover:bg-cyan-50 hover:text-cyan-950'"
+            ? 'bg-cyan-700 text-white'
+            : 'text-slate-200 hover:bg-white/10 hover:text-white'"
         >
           {{ item.label }}
         </NuxtLink>
       </nav>
 
-      <div class="mx-auto mt-4 flex max-w-7xl items-center justify-end border-t border-slate-100 pt-4">
+      <div class="mx-auto mt-4 flex max-w-7xl items-center justify-end border-t border-slate-800 pt-4">
         <LanguageSwitcher />
       </div>
     </div>

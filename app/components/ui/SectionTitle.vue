@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<{
 
 const alignmentClass = computed(() => props.align === 'center' ? 'mx-auto text-center' : '')
 const eyebrowClass = computed(() => props.tone === 'inverse' ? 'text-cyan-200' : 'text-cyan-700')
-const titleClass = computed(() => props.tone === 'inverse' ? 'text-white' : 'text-slate-950')
+const titleClass = computed(() => props.tone === 'inverse' ? 'text-white' : 'text-slate-900')
 const descriptionClass = computed(() => props.tone === 'inverse' ? 'text-slate-300' : 'text-slate-600')
 </script>
 

@@ -47,8 +47,13 @@ const parseBoolean = (value: string | boolean | undefined) => value === true || 
 
 const assertMailConfig = (config: MailConfig) => {
   const missingKeys = requiredConfigKeys.filter(key => !String(config[key] ?? '').trim())
+  const hasPlaceholderValue = [
+    config.smtpUser,
+    config.smtpPass,
+    config.mailFrom
+  ].some(value => /your-smtp-user|your-app-password/i.test(String(value ?? '')))
 
-  if (missingKeys.length) {
+  if (missingKeys.length || hasPlaceholderValue) {
     throw new MailConfigurationError()
   }
 
@@ -118,6 +123,9 @@ export const sendContactMail = async (config: MailConfig, payload: ContactMailPa
     host: mailConfig.host,
     port: mailConfig.port,
     secure: mailConfig.secure,
+    connectionTimeout: 8000,
+    greetingTimeout: 8000,
+    socketTimeout: 10000,
     auth: {
       user: mailConfig.user,
       pass: mailConfig.pass

@@ -22,7 +22,7 @@ watch(imageSrc, () => {
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">
           {{ t('home.hero.eyebrow') }}
         </p>
-        <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight tracking-normal text-slate-950 sm:text-5xl lg:text-6xl">
+        <h1 class="mt-5 max-w-3xl text-4xl font-semibold leading-tight tracking-normal text-slate-900 sm:text-4xl lg:text-5xl">
           {{ t('home.hero.title') }}
         </h1>
         <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
@@ -58,7 +58,7 @@ watch(imageSrc, () => {
       </div>
 
       <div class="relative">
-        <figure class="relative overflow-hidden rounded-lg border border-white bg-white shadow-2xl shadow-slate-950/12">
+        <figure class="relative overflow-hidden rounded-lg border border-white bg-white shadow-2xl shadow-slate-900/12">
           <img
             v-if="showImage"
             :src="t('home.hero.image')"

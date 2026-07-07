@@ -34,7 +34,7 @@ const services = computed(() => (tm('home.services.items') as ServiceItem[]).map
           <div class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-950 text-sm font-semibold text-white">
             {{ index + 1 }}
           </div>
-          <h3 class="mt-5 text-lg font-semibold text-slate-950">
+          <h3 class="mt-5 text-lg font-semibold text-slate-900">
             {{ service.title }}
           </h3>
           <p class="mt-3 text-sm leading-6 text-slate-600">

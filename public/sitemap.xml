@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <url>
+    <loc>https://artaqua.com.mk/</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/en</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/products</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/products" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/products" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/en/products</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/products" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/products" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/contact</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/contact" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/contact" />
+  </url>
+</urlset>

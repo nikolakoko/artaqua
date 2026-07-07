@@ -53,7 +53,7 @@ watch(categories, () => {
         <article
           v-for="category in categories"
           :key="category.id"
-          class="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-950/8"
+          class="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/8"
         >
           <div class="flex aspect-4/3 items-center justify-center bg-cyan-50 p-6">
             <img
@@ -77,7 +77,7 @@ watch(categories, () => {
             </div>
           </div>
           <div class="p-5">
-            <h3 class="text-lg font-semibold text-slate-950">
+            <h3 class="text-lg font-semibold text-slate-900">
               {{ category.title }}
             </h3>
             <p class="mt-3 text-sm leading-6 text-slate-600">

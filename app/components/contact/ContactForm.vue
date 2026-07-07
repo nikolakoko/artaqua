@@ -119,7 +119,7 @@ const handleSubmit = async () => {
       <p class="text-sm font-semibold uppercase tracking-[0.14em] text-cyan-700">
         {{ t('contact.form.eyebrow') }}
       </p>
-      <h2 class="mt-2 text-2xl font-semibold text-slate-950">
+      <h2 class="mt-2 text-2xl font-semibold text-slate-900">
         {{ t('contact.form.title') }}
       </h2>
       <p class="mt-3 text-sm leading-6 text-slate-600">
@@ -170,7 +170,7 @@ const handleSubmit = async () => {
             :placeholder="t(placeholderKey(field.key))"
             :aria-invalid="Boolean(errors[field.key])"
             :aria-describedby="errors[field.key] ? errorId(field.key) : undefined"
-            class="mt-2 w-full min-w-0 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-950 shadow-sm transition placeholder:text-slate-400 focus:border-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-100"
+            class="mt-2 w-full min-w-0 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm transition placeholder:text-slate-400 focus:border-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-100"
             @blur="validateField(field.key)"
             @input="resetStateOnInput"
           >
@@ -199,7 +199,7 @@ const handleSubmit = async () => {
           :placeholder="t(placeholderKey('message'))"
           :aria-invalid="Boolean(errors.message)"
           :aria-describedby="errors.message ? errorId('message') : undefined"
-          class="mt-2 w-full min-w-0 resize-y rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-950 shadow-sm transition placeholder:text-slate-400 focus:border-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-100"
+          class="mt-2 w-full min-w-0 resize-y rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm transition placeholder:text-slate-400 focus:border-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-100"
           @blur="validateField('message')"
           @input="resetStateOnInput"
         />
@@ -228,6 +228,7 @@ const handleSubmit = async () => {
         v-if="submitState === 'success'"
         class="rounded-lg border border-cyan-200 bg-cyan-50 px-4 py-3 text-sm font-medium leading-6 text-cyan-950"
         role="status"
+        aria-live="polite"
       >
         {{ t('contact.form.successMessage') }}
       </p>
@@ -235,6 +236,7 @@ const handleSubmit = async () => {
         v-else-if="submitState === 'error'"
         class="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium leading-6 text-red-800"
         role="alert"
+        aria-live="assertive"
       >
         {{ t('contact.form.errorMessage') }}
       </p>

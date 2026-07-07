@@ -12,15 +12,15 @@
   },
   "seo": {
     "home": {
-      "title": "ArtAqua | PostModerna",
+      "title": "ArtAqua / PostModerna",
       "description": "ArtAqua е бренд на PostModerna, специјализиран за опремување на бањи, санитарна опрема, туш кабини, кади, мебел и галантерија."
     },
     "products": {
-      "title": "Производи | ArtAqua",
+      "title": "Производи / ArtAqua",
       "description": "Преглед на шесте главни категории производи на ArtAqua: кади, туш кабини, санитарија, мебел за бањи, батерии и галантерија."
     },
     "contact": {
-      "title": "Контакт | ArtAqua",
+      "title": "Контакт / ArtAqua",
       "description": "Контакт информации, адреса, телефони, е-пошта и работно време за продажниот салон ArtAqua во Скопје."
     }
   },
@@ -35,7 +35,7 @@
       "imageAlt": "Продажен салон ArtAqua со изложени кади и санитарна опрема",
       "highlights": [
         "Од 1997 година",
-        "Продажен салон во Скопје",
+        "Салон во Скопје",
         "Опрема и изведба"
       ]
     },
@@ -105,6 +105,23 @@
     "ctaTitle": "Изберете опрема со стручна насока",
     "ctaDescription": "За точен избор, технички детали и достапни решенија, контактирајте го продажниот салон ArtAqua.",
     "ctaAction": "Контактирајте не",
+    "modal": {
+      "eyebrow": "Категорија",
+      "close": "Затвори",
+      "previous": "Претходна категорија",
+      "next": "Следна категорија",
+      "back": "Назад кон производите"
+    },
+    "gallery": {
+      "viewGallery": "Погледнете галерија",
+      "openGalleryFor": "Отвори галерија за {title}",
+      "imageCount": "{count} слики",
+      "title": "{title} галерија",
+      "close": "Затвори галерија",
+      "previousImage": "Претходна слика",
+      "nextImage": "Следна слика",
+      "counter": "{current} / {total}"
+    },
     "categories": [
       {
         "id": "bath-shower-trays-hydromassage",
@@ -190,7 +207,8 @@
     },
     "map": {
       "title": "Локација на продажниот салон",
-      "description": "Интерактивна мапа ќе биде додадена подоцна. Салонот се наоѓа во Тафталиџе, спроти студентскиот дом „Гоце Делчев“."
+      "description": "Салонот се наоѓа во Тафталиџе, спроти студентскиот дом „Гоце Делчев“.",
+      "iframeTitle": "Google мапа за ArtAqua / PostModerna"
     },
     "phones": [
       {
@@ -277,6 +295,13 @@
     "business": "ArtAqua / PostModerna",
     "copyright": "© {year} ArtAqua. Сите права се задржани."
   },
+  "social": {
+    "follow": "Социјални мрежи",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "instagramAria": "Отвори Instagram профил на ArtAqua",
+    "facebookAria": "Отвори Facebook страница на ArtAqua"
+  },
   "common": {
     "buttons": {
       "viewProducts": "Погледнете производи",
@@ -284,6 +309,7 @@
       "backHome": "Назад на почетна"
     },
     "labels": {
+      "skipToContent": "Прескокни до содржината",
       "language": "Јазик",
       "referenceImage": "Референтна слика",
       "imagePlaceholder": "Слика ќе биде додадена подоцна",
