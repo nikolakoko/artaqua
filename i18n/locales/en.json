@@ -31,7 +31,7 @@
       "description": "ArtAqua is a PostModerna brand and one of the first companies in Macedonia specialized in designer bathroom equipment, import, trade and installation.",
       "primaryAction": "View products",
       "secondaryAction": "Contact us",
-      "image": "",
+      "image": "images/products/bath-shower-trays-hydromassage/gallery-08.jpg",
       "imageAlt": "ArtAqua showroom with displayed bath tubs and sanitary equipment",
       "highlights": [
         "Since 1997",
@@ -48,7 +48,7 @@
         "The modern design and high quality of the products reflect the goal of following the latest European trends while offering modern, functional and reliable bathroom solutions."
       ],
       "brands": "The product range includes renowned Italian, Slovenian and Croatian manufacturers, including CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES and AQUAESTIL.",
-      "image": "",
+      "image": "logo/artaqua-logo-new.png",
       "imageAlt": "Part of the ArtAqua showroom with sanitary equipment and bathroom furniture"
     },
     "services": {
@@ -132,7 +132,7 @@
           "Hydro and aero massage systems",
           "Aromatherapy and chromotherapy"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/bath-shower-trays-hydromassage/gallery-01.png"
       },
       {
         "id": "shower-enclosures",
@@ -143,7 +143,7 @@
           "High-temperature processing",
           "Aligned with European standards"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/shower-enclosures/gallery-01.png"
       },
       {
         "id": "sanitary-ware",
@@ -154,7 +154,7 @@
           "Vitreous china",
           "Long-lasting quality"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/sanitary-ware/gallery-01.jpg"
       },
       {
         "id": "bathroom-furniture",
@@ -165,7 +165,7 @@
           "PVC laminate or polyurethane protection",
           "Quality final appearance"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/bathroom-furniture/gallery-04.jpg"
       },
       {
         "id": "taps-showers",
@@ -176,7 +176,7 @@
           "Quality cartridge mechanism",
           "Durability and warranty based on mechanism"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/taps-showers/gallery-03.png"
       },
       {
         "id": "accessories",
@@ -187,7 +187,7 @@
           "Quality chromium-plated finish",
           "Preserved strength, color and shine"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/accessories/gallery-09.png"
       }
     ]
   },

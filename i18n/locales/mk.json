@@ -31,7 +31,7 @@
       "description": "ArtAqua е бренд на PostModerna, една од првите фирми во Македонија специјализирани за опремување на бањи, увоз, трговија и комплетна изведба.",
       "primaryAction": "Погледнете производи",
       "secondaryAction": "Контактирајте не",
-      "image": "",
+      "image": "images/products/bath-shower-trays-hydromassage/gallery-08.jpg",
       "imageAlt": "Продажен салон ArtAqua со изложени кади и санитарна опрема",
       "highlights": [
         "Од 1997 година",
@@ -48,7 +48,7 @@
         "Модерниот дизајн и високиот квалитет на производите ја потврдуваат нашата цел секогаш да бидеме во тек со најновите трендови на европскиот пазар."
       ],
       "brands": "Широкиот асортиман вклучува производи од реномирани италијански, словенечки и хрватски производители, меѓу кои CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES и AQUAESTIL.",
-      "image": "",
+      "image": "logo/artaqua-logo-new.png",
       "imageAlt": "Дел од продажниот салон ArtAqua со санитарна опрема и мебел за бањи"
     },
     "services": {
@@ -132,7 +132,7 @@
           "Хидро и аеро масажни системи",
           "Ароматерапија и хромотерапија"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/bath-shower-trays-hydromassage/gallery-01.png"
       },
       {
         "id": "shower-enclosures",
@@ -143,7 +143,7 @@
           "Обработка на висока температура",
           "Усогласено со европски стандарди"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/shower-enclosures/gallery-01.png"
       },
       {
         "id": "sanitary-ware",
@@ -154,7 +154,7 @@
           "Vitreous china",
           "Траен квалитет"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/sanitary-ware/gallery-01.jpg"
       },
       {
         "id": "bathroom-furniture",
@@ -165,7 +165,7 @@
           "ПВЦ фолија или полиуретанска заштита",
           "Квалитетен завршен изглед"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/bathroom-furniture/gallery-04.jpg"
       },
       {
         "id": "taps-showers",
@@ -176,7 +176,7 @@
           "Квалитетен механизам",
           "Трајност и гаранција според механизмот"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/taps-showers/gallery-03.png"
       },
       {
         "id": "accessories",
@@ -187,7 +187,7 @@
           "Квалитетна хромирана обработка",
           "Зачувана цврстина, боја и сјај"
         ],
-        "referenceImage": ""
+        "referenceImage": "images/products/accessories/gallery-09.png"
       }
     ]
   },
