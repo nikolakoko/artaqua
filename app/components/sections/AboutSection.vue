@@ -22,7 +22,7 @@ watch(imageSrc, () => {
           v-if="showImage"
           :src="t('home.about.image')"
           :alt="t('home.about.imageAlt')"
-          class="aspect-4/3 w-full object-contain object-center p-8"
+          class="aspect-4/3 h-full object-cover"
           @error="imageFailed = true"
         >
         <div

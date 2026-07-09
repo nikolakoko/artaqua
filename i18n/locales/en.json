@@ -31,7 +31,7 @@
       "description": "ArtAqua is a PostModerna brand and one of the first companies in Macedonia specialized in designer bathroom equipment, import, trade and installation.",
       "primaryAction": "View products",
       "secondaryAction": "Contact us",
-      "image": "images/products/bath-shower-trays-hydromassage/gallery-08.jpg",
+      "image": "images/home/hero.png",
       "imageAlt": "ArtAqua showroom with displayed bath tubs and sanitary equipment",
       "highlights": [
         "Since 1997",
@@ -48,12 +48,12 @@
         "The modern design and high quality of the products reflect the goal of following the latest European trends while offering modern, functional and reliable bathroom solutions."
       ],
       "brands": "The product range includes renowned Italian, Slovenian and Croatian manufacturers, including CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES and AQUAESTIL.",
-      "image": "logo/artaqua-logo-new.png",
+      "image": "images/home/about.jpg",
       "imageAlt": "Part of the ArtAqua showroom with sanitary equipment and bathroom furniture"
     },
     "services": {
       "eyebrow": "Services",
-      "title": "Services",
+      "title": "Our services",
       "description": "From product selection to installation and complete execution, ArtAqua connects bathroom equipment with practical solutions.",
       "body": [
         "Professional service and strong technical knowledge of the products are key characteristics of the ArtAqua brand.",
