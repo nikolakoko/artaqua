@@ -48,7 +48,7 @@
         "The modern design and high quality of the products reflect the goal of following the latest European trends while offering modern, functional and reliable bathroom solutions."
       ],
       "brands": "The product range includes renowned Italian, Slovenian and Croatian manufacturers, including CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES and AQUAESTIL.",
-      "image": "images/home/about.jpg",
+      "image": "logo/artaqua-logo-new.png",
       "imageAlt": "Part of the ArtAqua showroom with sanitary equipment and bathroom furniture"
     },
     "services": {
@@ -154,7 +154,7 @@
           "Vitreous china",
           "Long-lasting quality"
         ],
-        "referenceImage": "images/products/sanitary-ware/gallery-01.jpg"
+        "referenceImage": "images/products/sanitary-ware/gallery-01.png"
       },
       {
         "id": "bathroom-furniture",

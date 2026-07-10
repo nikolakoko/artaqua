@@ -48,7 +48,7 @@
         "Модерниот дизајн и високиот квалитет на производите ја потврдуваат нашата цел секогаш да бидеме во тек со најновите трендови на европскиот пазар."
       ],
       "brands": "Широкиот асортиман вклучува производи од реномирани италијански, словенечки и хрватски производители, меѓу кои CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES и AQUAESTIL.",
-      "image": "images/home/about.jpg",
+      "image": "logo/artaqua-logo-new.png",
       "imageAlt": "Дел од продажниот салон ArtAqua со санитарна опрема и мебел за бањи"
     },
     "services": {
@@ -154,7 +154,7 @@
           "Vitreous china",
           "Траен квалитет"
         ],
-        "referenceImage": "images/products/sanitary-ware/gallery-01.jpg"
+        "referenceImage": "images/products/sanitary-ware/gallery-01.png"
       },
       {
         "id": "bathroom-furniture",

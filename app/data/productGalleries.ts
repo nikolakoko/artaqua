@@ -24,7 +24,7 @@ export const productGalleries: Record<string, string[]> = {
     '/images/products/shower-enclosures/gallery-10.jpg'
   ],
   'sanitary-ware': [
-    '/images/products/sanitary-ware/gallery-01.jpg',
+    '/images/products/sanitary-ware/gallery-01.png',
     '/images/products/sanitary-ware/gallery-02.jpg',
     '/images/products/sanitary-ware/gallery-03.jpg',
     '/images/products/sanitary-ware/gallery-04.jpg',

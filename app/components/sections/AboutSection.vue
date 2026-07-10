@@ -17,12 +17,12 @@ watch(imageSrc, () => {
 <template>
   <section class="bg-stone-50 py-16 sm:py-20">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-      <figure class="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+      <figure class="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm content-center">
         <img
           v-if="showImage"
           :src="t('home.about.image')"
           :alt="t('home.about.imageAlt')"
-          class="aspect-4/3 h-full object-cover"
+          class="aspect-4/3 w-full object-contain"
           @error="imageFailed = true"
         >
         <div
