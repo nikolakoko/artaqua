@@ -1,64 +1,95 @@
-# Nuxt Starter Template
+# ArtAqua / PostModerna Website
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+Modern Nuxt 4 website for ArtAqua, the PostModerna bathroom and sanitary equipment showroom in Skopje.
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+The site is mostly static, with localized Macedonian and English routes and a server API contact form that sends email through SMTP.
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+## Tech Stack
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png" width="830" height="466">
-  </picture>
-</a>
+- Nuxt 4
+- Vue 3
+- TypeScript
+- Nuxt UI and Tailwind CSS utilities
+- `@nuxtjs/i18n` for Macedonian and English routing/content
+- Nodemailer for the contact form backend
 
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
+## Routes
 
-## Quick Start
-
-```bash [Terminal]
-npm create nuxt@latest -- -t ui
-```
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
+| Route | Language | Purpose |
+| --- | --- | --- |
+| `/` | Macedonian | Homepage |
+| `/en` | English | Homepage |
+| `/products` | Macedonian | Product category overview |
+| `/en/products` | English | Product category overview |
+| `/contact` | Macedonian | Contact information and form |
+| `/en/contact` | English | Contact information and form |
 
 ## Setup
 
-Make sure to install the dependencies:
+Install dependencies with npm:
 
 ```bash
-pnpm install
+npm install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Copy `.env.example` to `.env` and fill in the local SMTP settings.
 
 ```bash
-pnpm dev
+cp .env.example .env
 ```
 
-## Production
+On Windows PowerShell:
 
-Build the application for production:
+```powershell
+Copy-Item .env.example .env
+```
+
+## Development
+
+Start the local development server:
 
 ```bash
-pnpm build
+npm run dev
 ```
 
-Locally preview production build:
+Run quality checks:
 
 ```bash
-pnpm preview
+npm run typecheck
+npm run lint
+npm run build
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Preview a production build locally:
 
-## Renovate integration
+```bash
+npm run preview
+```
 
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+## Environment Variables
+
+```env
+NUXT_PUBLIC_SITE_URL=https://artaqua.com.mk
+
+NUXT_SMTP_HOST=smtp.gmail.com
+NUXT_SMTP_PORT=465
+NUXT_SMTP_SECURE=true
+NUXT_SMTP_USER=your-smtp-user@example.com
+NUXT_SMTP_PASS=your-app-password
+NUXT_MAIL_FROM="ArtAqua Website <your-smtp-user@example.com>"
+NUXT_CONTACT_TO=info@artaqua.com.mk
+```
+
+For Gmail, use an App Password, not your normal Gmail password.
+
+For production, prefer the real company/domain SMTP server if available. SMTP credentials and recipient configuration are private runtime config values and must not be committed.
+
+## Deployment Notes
+
+The public pages can be prerendered, but the contact form requires a server/API-capable Nuxt deployment because it posts to `POST /api/contact`.
+
+Do not deploy this as a purely static-only site unless the contact form is replaced with another server-capable form provider.
+
+## Reference Material
+
+Old-site crawl artifacts and downloaded reference files are kept under `reference/old-site/` for content and asset review. They are not public routes and should not be included in sitemap output.

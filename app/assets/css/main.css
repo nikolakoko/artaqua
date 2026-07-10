@@ -3,16 +3,35 @@
 
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
+  --color-aqua-50: #eefbfc;
+  --color-aqua-100: #d5f3f6;
+  --color-aqua-600: #158aa0;
+  --color-aqua-800: #07566a;
+  --color-stone-soft: #f7f5f1;
+  --color-ceramic: #fbfbf8;
+  --color-glass: #e7f6f8;
+}
 
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
-  --color-green-800: #016538;
-  --color-green-900: #0A5331;
-  --color-green-950: #052E16;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #f7f5f1;
+    color: #0f172a;
+  }
+
+  ::selection {
+    background: #cffafe;
+    color: #083344;
+  }
+
+  a {
+    text-underline-offset: 0.2em;
+  }
+
+  :focus-visible {
+    outline-color: #0e7490;
+  }
 }
