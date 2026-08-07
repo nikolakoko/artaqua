@@ -34,7 +34,7 @@ watch(
         :aria-label="t('nav.home')"
       >
         <img
-          src="/logo/artaqua-logo-new.png"
+          src="/logo/artaqua-logo-new.webp"
           alt="ArtAqua PostModerna"
           class="h-[3.25rem] w-auto max-w-44 object-contain sm:h-[3.75rem] sm:max-w-54"
         >

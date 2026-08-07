@@ -31,7 +31,7 @@
       "description": "ArtAqua е бренд на PostModerna, една од првите фирми во Македонија специјализирани за опремување на бањи, увоз, трговија и комплетна изведба.",
       "primaryAction": "Погледнете производи",
       "secondaryAction": "Контактирајте не",
-      "image": "images/home/hero.png",
+      "image": "images/home/hero.webp",
       "imageAlt": "Продажен салон ArtAqua со изложени кади и санитарна опрема",
       "highlights": [
         "Од 1997 година",
@@ -48,7 +48,7 @@
         "Модерниот дизајн и високиот квалитет на производите ја потврдуваат нашата цел секогаш да бидеме во тек со најновите трендови на европскиот пазар."
       ],
       "brands": "Широкиот асортиман вклучува производи од реномирани италијански, словенечки и хрватски производители, меѓу кои CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES и AQUAESTIL.",
-      "image": "logo/artaqua-logo-new.png",
+      "image": "logo/artaqua-logo-new.webp",
       "imageAlt": "Дел од продажниот салон ArtAqua со санитарна опрема и мебел за бањи"
     },
     "services": {
