@@ -1,0 +1,39 @@
+# Development dependencies and build artifacts
+node_modules
+.output
+.nuxt
+dist
+.cache
+coverage
+
+# Version control and CI/CD
+.git
+.github
+.agents
+
+# IDE and editor configurations
+.vscode
+.idea
+.editorconfig
+
+# Environment and configuration files
+.env
+.env.*
+!.env.example
+
+# Documentation and project files
+README.md
+LICENSE
+renovate.json
+
+# Docker-specific
+Dockerfile
+.dockerignore
+
+# Logs and temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+reference
