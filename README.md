@@ -82,7 +82,7 @@ NUXT_CONTACT_TO=info@artaqua.com.mk
 
 For Gmail, use an App Password, not your normal Gmail password.
 
-For production, prefer the real company/domain SMTP server if available. SMTP credentials and recipient configuration are private runtime config values and must not be committed.
+The current implementation uses Gmail SMTP. A company/domain SMTP server can be used later without changing the contact form architecture. SMTP credentials and recipient configuration are private runtime config values and must not be committed.
 
 ## Deployment Notes
 
@@ -90,6 +90,36 @@ The public pages can be prerendered, but the contact form requires a server/API-
 
 Do not deploy this as a purely static-only site unless the contact form is replaced with another server-capable form provider.
 
-## Reference Material
+## Docker 
 
-Old-site crawl artifacts and downloaded reference files are kept under `reference/old-site/` for content and asset review. They are not public routes and should not be included in sitemap output.
+The application can be built and run as a production Docker container.
+
+### Build the Docker image
+
+`docker build -t yourusername/artaqua:latest .`
+
+### Run without environment variables
+
+This starts the website, but the contact form will not be able to send email without the required SMTP configuration.
+
+`docker run --rm -p 3000:3000 yourusername/artaqua:latest`
+
+The website will then be available at: `http://localhost:3000`
+
+### Run with local environment variables
+
+Create a .env file using .env.example and fill in the required SMTP values.
+
+Then run:
+
+`docker run --rm -p 3000:3000 --env-file .env yourusername/artaqua:latest`
+
+This provides the container with the SMTP configuration at runtime without storing the secrets inside the Docker image.
+
+### Docker Hub
+
+The GitHub Actions workflow automatically builds and publishes the production Docker image to Docker Hub when changes are pushed to the master branch.
+
+The image is published as: `nikolakoko/artaqua:latest`
+
+A commit-specific SHA tag is also generated for each production image.
