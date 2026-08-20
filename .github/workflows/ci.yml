@@ -1,31 +1,65 @@
-name: ci
+name: CI
 
-on: push
+on:
+  push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
   ci:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [22]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Install node
+      - name: Install Node
         uses: actions/setup-node@v6
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --frozen-lockfile || npm install
 
       - name: Lint
         run: npm run lint
 
       - name: Typecheck
         run: npm run typecheck
+
+      - name: Build Nuxt application
+        run: npm run build
+
+      - name: Set up Docker Buildx
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Extract Docker metadata
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ secrets.DOCKER_USERNAME }}/artaqua
+          tags: |
+            type=raw,value=latest
+            type=sha
+
+      - name: Build and push Docker image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
