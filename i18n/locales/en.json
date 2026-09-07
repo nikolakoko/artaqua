@@ -196,7 +196,7 @@
     "title": "Contact",
     "intro": "Contact information for the ArtAqua showroom and PostModerna company, with a frontend form prepared for the next email phase.",
     "showroom": "ArtAqua",
-    "company": "PostModerna Ltd.",
+    "company": "PostModerna",
     "address": "Moskovska Street No. 24, unit 1, Skopje",
     "locationNote": "Taftalidze, opposite the Goce Delchev student residential complex",
     "workingHoursTitle": "Working hours",
@@ -212,26 +212,26 @@
     },
     "phones": [
       {
-        "label": "Telephone",
+        "label": "Landline phone",
         "value": "+389 (0)2 3075 900"
       },
       {
-        "label": "Fax",
-        "value": "+389 (0)2 3075 901"
+        "label": "Mobile phone 1",
+        "value": "+389 (0)70 322 600"
       },
       {
-        "label": "Mobile",
-        "value": "+389 (0)70 322 600"
+        "label": "Mobile phone 2",
+        "value": "+389 (0)70 322 900"
       }
     ],
     "emails": [
       {
-        "label": "Clients",
+        "label": "For clients",
         "user": "info",
         "domain": "artaqua.com.mk"
       },
       {
-        "label": "Suppliers",
+        "label": "For suppliers",
         "user": "info",
         "domain": "postmoderna.com.mk"
       }
