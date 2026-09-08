@@ -71,7 +71,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKeydown))
 <template>
   <Teleport to="body">
     <div
-      class="fixed inset-0 z-[60] flex items-center justify-center bg-slate-900/85 px-4 py-6 backdrop-blur-sm"
+      class="fixed inset-0 z-60 flex items-center justify-center bg-slate-900/85 px-4 py-6 backdrop-blur-sm"
       role="dialog"
       aria-modal="true"
       :aria-label="t('products.gallery.title', { title })"
@@ -139,7 +139,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKeydown))
         </button>
 
         <div class="absolute bottom-0 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-full bg-slate-900/80 px-4 py-2 text-sm text-white shadow-lg">
-          <span class="max-w-[14rem] truncate font-medium sm:max-w-sm">{{ title }}</span>
+          <span class="max-w-56 truncate font-medium sm:max-w-sm">{{ title }}</span>
           <span
             v-if="hasImages"
             class="text-slate-300"

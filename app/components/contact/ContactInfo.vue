@@ -95,6 +95,7 @@ const formatTel = (value: string) => `tel:${value.replace(/[^\d+]/g, '')}`
             class="min-w-0 wrap-break-word"
           >
             <span class="font-semibold text-slate-900">{{ phone.label }}:</span>
+            <br>
             <a
               :href="formatTel(phone.value)"
               class="ml-1 wrap-break-word text-cyan-800 transition hover:text-cyan-950"

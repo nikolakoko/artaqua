@@ -196,7 +196,7 @@
     "title": "Контакт",
     "intro": "Контакт информации за продажниот салон ArtAqua и фирмата PostModerna, со можност да подготвите порака преку формата.",
     "showroom": "ArtAqua",
-    "company": "PostModerna доо",
+    "company": "PostModerna",
     "address": "ул. Московска, бр. 24, лок. 1, Скопје",
     "locationNote": "Тафталиџе, спроти студентскиот дом „Гоце Делчев“",
     "workingHoursTitle": "Работно време",
@@ -212,26 +212,26 @@
     },
     "phones": [
       {
-        "label": "Телефон",
+        "label": "Фиксен",
         "value": "+389 (0)2 3075 900"
       },
       {
-        "label": "Факс",
-        "value": "+389 (0)2 3075 901"
+        "label": "Мобилен 1",
+        "value": "+389 (0)70 322 600"
       },
       {
-        "label": "Мобилен",
-        "value": "+389 (0)70 322 600"
+        "label": "Мобилен 2",
+        "value": "+389 (0)70 322 900"
       }
     ],
     "emails": [
       {
-        "label": "Клиенти",
+        "label": "За клиенти",
         "user": "info",
         "domain": "artaqua.com.mk"
       },
       {
-        "label": "Добавувачи",
+        "label": "За добавувачи",
         "user": "info",
         "domain": "postmoderna.com.mk"
       }

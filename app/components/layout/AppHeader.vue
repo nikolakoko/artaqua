@@ -36,7 +36,7 @@ watch(
         <img
           src="/logo/artaqua-logo-new.webp"
           alt="ArtAqua PostModerna"
-          class="h-[3.25rem] w-auto max-w-44 object-contain sm:h-[3.75rem] sm:max-w-54"
+          class="h-13 w-auto max-w-44 object-contain sm:h-15 sm:max-w-54"
         >
       </NuxtLink>
 
