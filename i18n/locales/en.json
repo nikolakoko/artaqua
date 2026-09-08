@@ -212,15 +212,15 @@
     },
     "phones": [
       {
-        "label": "Landline phone",
+        "label": "Landline",
         "value": "+389 (0)2 3075 900"
       },
       {
-        "label": "Mobile phone 1",
+        "label": "Mobile 1",
         "value": "+389 (0)70 322 600"
       },
       {
-        "label": "Mobile phone 2",
+        "label": "Mobile 2",
         "value": "+389 (0)70 322 900"
       }
     ],

@@ -15,14 +15,14 @@ The site is mostly static, with localized Macedonian and English routes and a se
 
 ## Routes
 
-| Route | Language | Purpose |
-| --- | --- | --- |
-| `/` | Macedonian | Homepage |
-| `/en` | English | Homepage |
-| `/products` | Macedonian | Product category overview |
-| `/en/products` | English | Product category overview |
-| `/contact` | Macedonian | Contact information and form |
-| `/en/contact` | English | Contact information and form |
+| Route          | Language   | Purpose                      |
+|----------------|------------|------------------------------|
+| `/`            | Macedonian | Homepage                     |
+| `/en`          | English    | Homepage                     |
+| `/products`    | Macedonian | Product category overview    |
+| `/en/products` | English    | Product category overview    |
+| `/contact`     | Macedonian | Contact information and form |
+| `/en/contact`  | English    | Contact information and form |
 
 ## Setup
 
