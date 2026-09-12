@@ -1,21 +1,21 @@
 <script setup lang="ts">
 import BaseButton from '~/components/ui/BaseButton.vue'
 
+useHead({
+  link: [
+    { rel: 'preload', as: 'image', href: '/images/heroes/home_hero.webp', fetchpriority: 'high' }
+  ]
+})
+
 const { t, tm } = useI18n()
 const { resolveMessageArray } = useI18nResolved()
 const localePath = useLocalePath()
 
-const imageFailed = ref(false)
-const imageSrc = computed(() => t('home.hero.image').trim())
 const highlights = computed(() => resolveMessageArray(tm('home.hero.highlights')))
-
-watch(imageSrc, () => {
-  imageFailed.value = false
-})
 </script>
 
 <template>
-  <section class="relative overflow-hidden border-b border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f7f5f1_100%)]">
+  <section class="relative overflow-hidden border-b border-slate-200 bg-[url('/images/heroes/home_hero.webp')] bg-cover bg-center bg-no-repeat">
     <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-7 lg:py-20">
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">
@@ -40,7 +40,7 @@ watch(imageSrc, () => {
           </BaseButton>
         </div>
 
-        <dl class="mt-10 grid gap-3 sm:grid-cols-3">
+        <dl class="mt-10 grid max-w-lg gap-3 sm:grid-cols-3">
           <div
             v-for="item in highlights"
             :key="item"
@@ -49,7 +49,7 @@ watch(imageSrc, () => {
             <dt class="sr-only">
               {{ item }}
             </dt>
-            <dd class="text-sm font-semibold text-slate-800">
+            <dd class="text-sm font-semibold text-slate-800 whitespace-nowrap">
               {{ item }}
             </dd>
           </div>
