@@ -5,6 +5,12 @@ import ProductGalleryModal from '~/components/products/ProductGalleryModal.vue'
 import SectionTitle from '~/components/ui/SectionTitle.vue'
 import { getProductGalleryImages } from '~/data/productGalleries'
 
+useHead({
+  link: [
+    { rel: 'preload', as: 'image', href: '/images/heroes/products_hero.webp', fetchpriority: 'high' }
+  ]
+})
+
 type ProductCategory = {
   id: unknown
   title: unknown
@@ -45,7 +51,7 @@ const getCategoryImages = (category: ProductCategory) => getProductGalleryImages
 
 <template>
   <div>
-    <section class="border-b border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f7f5f1_100%)] py-14 sm:py-18">
+    <section class="border-b border-slate-200 bg-[url('/images/heroes/products_hero.webp')] bg-cover bg-center bg-no-repeat py-14 sm:py-18">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionTitle
           as="h1"

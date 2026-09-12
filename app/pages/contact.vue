@@ -3,6 +3,12 @@ import ContactForm from '~/components/contact/ContactForm.vue'
 import ContactInfo from '~/components/contact/ContactInfo.vue'
 import SectionTitle from '~/components/ui/SectionTitle.vue'
 
+useHead({
+  link: [
+    { rel: 'preload', as: 'image', href: '/images/heroes/contact_hero.webp', fetchpriority: 'high' }
+  ]
+})
+
 const { t } = useI18n()
 const mapEmbedSrc = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.0217782718623!2d21.386528376488673!3d41.99980815778471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415f7101bb829%3A0xa33bd02efa618309!2sArt%20Aqua-%20Postmoderna!5e0!3m2!1sen!2smk!4v1783453460547!5m2!1sen!2smk'
 
@@ -14,7 +20,7 @@ useLocalizedSeo('contact', {
 
 <template>
   <div>
-    <section class="border-b border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f7f5f1_100%)] py-14 sm:py-18">
+    <section class="border-b border-slate-200 bg-[url('/images/heroes/contact_hero.webp')] bg-cover bg-center bg-no-repeat py-14 sm:py-18">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionTitle
           as="h1"
