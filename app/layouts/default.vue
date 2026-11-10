@@ -3,6 +3,8 @@ import AppFooter from '~/components/layout/AppFooter.vue'
 import AppHeader from '~/components/layout/AppHeader.vue'
 
 const { t } = useI18n()
+
+useBusinessHoursClock()
 </script>
 
 <template>

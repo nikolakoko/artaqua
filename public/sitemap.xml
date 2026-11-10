@@ -39,4 +39,40 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/contact" />
   </url>
+  <url>
+    <loc>https://artaqua.com.mk/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/privacy-policy" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/privacy-policy" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/terms-of-use" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/en/terms-of-use</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/terms-of-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/terms-of-use" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/returns-refunds</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/returns-refunds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/returns-refunds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/returns-refunds" />
+  </url>
+  <url>
+    <loc>https://artaqua.com.mk/en/returns-refunds</loc>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://artaqua.com.mk/returns-refunds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://artaqua.com.mk/en/returns-refunds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artaqua.com.mk/returns-refunds" />
+  </url>
 </urlset>

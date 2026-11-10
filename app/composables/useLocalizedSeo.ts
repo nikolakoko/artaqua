@@ -3,11 +3,13 @@ type LocalizedSeoPaths = {
   en: string
 }
 
+type LocalizedSeoPage = 'home' | 'products' | 'contact' | 'privacyPolicy' | 'termsOfUse' | 'returnsRefunds'
+
 const normalizeSiteUrl = (siteUrl: string) => siteUrl.replace(/\/+$/, '')
 
 const normalizePath = (path: string) => path === '/' ? '/' : `/${path.replace(/^\/+|\/+$/g, '')}`
 
-export const useLocalizedSeo = (pageKey: 'home' | 'products' | 'contact', paths: LocalizedSeoPaths) => {
+export const useLocalizedSeo = (pageKey: LocalizedSeoPage, paths: LocalizedSeoPaths) => {
   const { locale, t } = useI18n()
   const runtimeConfig = useRuntimeConfig()
   const siteUrl = computed(() => normalizeSiteUrl(runtimeConfig.public.siteUrl || 'https://artaqua.com.mk'))

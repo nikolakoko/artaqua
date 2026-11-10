@@ -1,31 +1,24 @@
 <script setup lang="ts">
+import BusinessHoursStatus from '~/components/business/BusinessHoursStatus.vue'
 import { socialLinks } from '~/data/socialLinks'
 
-type ContactItem = {
-  label: unknown
-  value: unknown
-}
-
-const { t, tm } = useI18n()
-const { resolveMessage } = useI18nResolved()
+const { t } = useI18n()
 const localePath = useLocalePath()
+const { workingHours, isOpen } = useBusinessHours()
 
 const year = new Date().getFullYear()
-
-function resolveItems<T>(value: unknown): T[] {
-  return Array.isArray(value) ? value as T[] : []
-}
-
-const workingHours = computed(() => resolveItems<ContactItem>(tm('contact.workingHours')).map(item => ({
-  label: resolveMessage(item.label),
-  value: resolveMessage(item.value)
-})))
 
 const quickLinks = computed(() => [
   { label: t('nav.home'), to: localePath('/') },
   { label: t('nav.products'), to: localePath('/products') },
   { label: t('nav.contact'), to: localePath('/contact') }
 ])
+
+const legalLinks = [
+  { page: 'privacyPolicy', route: 'privacy-policy' },
+  { page: 'termsOfUse', route: 'terms-of-use' },
+  { page: 'returnsRefunds', route: 'returns-refunds' }
+] as const
 </script>
 
 <template>
@@ -41,27 +34,8 @@ const quickLinks = computed(() => [
         <p class="mt-4 max-w-sm text-sm leading-6 text-slate-300">
           {{ t('footer.tagline') }}
         </p>
-      </section>
 
-      <section>
-        <h2 class="text-sm font-semibold uppercase tracking-wide text-cyan-200">
-          {{ t('footer.quickLinks') }}
-        </h2>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li
-            v-for="link in quickLinks"
-            :key="link.to"
-          >
-            <NuxtLink
-              :to="link.to"
-              class="text-slate-300 transition hover:text-white"
-            >
-              {{ link.label }}
-            </NuxtLink>
-          </li>
-        </ul>
-
-        <h2 class="mt-8 text-sm font-semibold uppercase tracking-wide text-cyan-200">
+        <h2 class="mt-6 text-sm font-semibold uppercase tracking-wide text-cyan-200">
           {{ t('social.follow') }}
         </h2>
         <div class="mt-4 flex flex-wrap gap-3">
@@ -84,24 +58,66 @@ const quickLinks = computed(() => [
 
       <section>
         <h2 class="text-sm font-semibold uppercase tracking-wide text-cyan-200">
+          {{ t('footer.quickLinks') }}
+        </h2>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li
+            v-for="link in quickLinks"
+            :key="link.to"
+          >
+            <NuxtLink
+              :to="link.to"
+              class="text-slate-300 transition hover:text-white"
+            >
+              {{ link.label }}
+            </NuxtLink>
+          </li>
+        </ul>
+
+        <nav
+          class="mt-8"
+          :aria-label="t('legal.heading')"
+        >
+          <h2 class="text-sm font-semibold uppercase tracking-wide text-cyan-200">
+            {{ t('legal.heading') }}
+          </h2>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li
+              v-for="link in legalLinks"
+              :key="link.route"
+            >
+              <NuxtLink
+                :to="localePath({ name: link.route })"
+                class="wrap-break-word text-slate-300 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
+              >
+                {{ t(`legal.${link.page}.title`) }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section>
+        <h2 class="text-sm font-semibold uppercase tracking-wide text-cyan-200">
           {{ t('footer.location') }}
         </h2>
-        <div class="mt-4 space-y-3 text-sm leading-6 text-slate-300">
+        <div class="mt-4 text-sm leading-6 text-slate-300">
           <p>{{ t('contact.address') }}</p>
         </div>
-        <br>
-        <h2 class="text-sm font-semibold uppercase tracking-wide text-cyan-200">
+        <h2 class="mt-6 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-cyan-200">
           {{ t('footer.workingTime') }}
+          <BusinessHoursStatus :is-open="isOpen" />
         </h2>
-        <div class="mt-4 space-y-3 text-sm leading-6 text-slate-300">
-          <div>
-            <p
-              v-for="item in workingHours"
-              :key="item.label"
-            >
-              <span class="text-slate-400">{{ item.label }}:</span> {{ item.value }}
-            </p>
-          </div>
+        <div class="mt-4 text-sm leading-6 text-slate-300">
+          <p
+            v-for="item in workingHours"
+            :key="item.label"
+          >
+            <span class="text-slate-400">{{ item.label }}:</span> {{ item.value }}
+          </p>
+          <p class="mt-3 text-xs leading-5 text-slate-400">
+            {{ t('contact.workingHoursNote') }}
+          </p>
         </div>
       </section>
     </div>
