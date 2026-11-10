@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BusinessHoursStatus from '~/components/business/BusinessHoursStatus.vue'
 import { socialLinks } from '~/data/socialLinks'
 
 type ContactItem = {
@@ -19,6 +20,7 @@ type ResolvedEmailItem = {
 
 const { t, tm } = useI18n()
 const { resolveMessage } = useI18nResolved()
+const { workingHours, isOpen } = useBusinessHours()
 
 function resolveItems<T>(value: unknown): T[] {
   return Array.isArray(value) ? value as T[] : []
@@ -33,11 +35,6 @@ const emails = computed(() => resolveItems<EmailItem>(tm('contact.emails')).map(
   user: resolveMessage(email.user),
   domain: resolveMessage(email.domain)
 })))
-const workingHours = computed(() => resolveItems<ContactItem>(tm('contact.workingHours')).map(item => ({
-  label: resolveMessage(item.label),
-  value: resolveMessage(item.value)
-})))
-
 const formatEmail = (email: ResolvedEmailItem) => `${email.user}@${email.domain}`
 const formatTel = (value: string) => `tel:${value.replace(/[^\d+]/g, '')}`
 </script>
@@ -139,10 +136,11 @@ const formatTel = (value: string) => `tel:${value.replace(/[^\d+]/g, '')}`
       <div class="flex items-center gap-3">
         <UIcon
           name="i-lucide-clock"
-          class="size-5 text-cyan-800"
+          class="size-5 shrink-0 text-cyan-800"
         />
-        <h2 class="text-lg font-semibold text-slate-900">
+        <h2 class="flex items-center gap-2 text-lg font-semibold text-slate-900">
           {{ t('contact.workingHoursTitle') }}
+          <BusinessHoursStatus :is-open="isOpen" />
         </h2>
       </div>
       <div class="mt-5 grid min-w-0 gap-3 text-sm leading-6 text-slate-700 sm:grid-cols-2">
@@ -155,6 +153,9 @@ const formatTel = (value: string) => `tel:${value.replace(/[^\d+]/g, '')}`
           <span>{{ item.value }}</span>
         </p>
       </div>
+      <p class="mt-3 text-xs leading-5 text-slate-600">
+        {{ t('contact.workingHoursNote') }}
+      </p>
     </section>
 
     <section class="min-w-0 rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:p-6">

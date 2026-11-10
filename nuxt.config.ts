@@ -31,7 +31,13 @@ export default defineNuxtConfig({
     '/products': { prerender: true },
     '/en/products': { prerender: true },
     '/contact': { prerender: true },
-    '/en/contact': { prerender: true }
+    '/en/contact': { prerender: true },
+    '/privacy-policy': { prerender: true },
+    '/en/privacy-policy': { prerender: true },
+    '/terms-of-use': { prerender: true },
+    '/en/terms-of-use': { prerender: true },
+    '/returns-refunds': { prerender: true },
+    '/en/returns-refunds': { prerender: true }
   },
 
   compatibilityDate: '2025-01-15',

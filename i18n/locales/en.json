@@ -22,6 +22,18 @@
     "contact": {
       "title": "Contact / ArtAqua",
       "description": "Contact information, address, phone numbers, email addresses and working hours for the ArtAqua showroom in Skopje."
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy / ArtAqua",
+      "description": "How ArtAqua and PostModerna handle contact form data, cookies and embedded maps, and how to exercise your privacy rights."
+    },
+    "termsOfUse": {
+      "title": "Terms of Use / ArtAqua",
+      "description": "Terms for using the ArtAqua showroom catalogue, product galleries and contact form."
+    },
+    "returnsRefunds": {
+      "title": "Returns & Refunds / ArtAqua",
+      "description": "Information on returns, exchanges, refunds, warranty and consumer rights for purchases made directly with ArtAqua."
     }
   },
   "home": {
@@ -234,16 +246,23 @@
         "domain": "postmoderna.com.mk"
       }
     ],
-    "workingHours": [
-      {
+    "workingHours": {
+      "weekdays": {
         "label": "Monday-Friday",
-        "value": "09:00-18:00"
+        "opensAt": "09:00",
+        "closesAt": "18:00"
       },
-      {
+      "saturday": {
         "label": "Saturday",
-        "value": "09:00-15:00"
+        "opensAt": "09:00",
+        "closesAt": "15:00"
       }
-    ],
+    },
+    "workingHoursNote": "Hours may differ on public holidays or during exceptional closures.",
+    "hoursStatus": {
+      "open": "Open now according to regular hours",
+      "closed": "Closed now according to regular hours"
+    },
     "form": {
       "eyebrow": "Message",
       "title": "Contact form",
@@ -283,6 +302,160 @@
       "errorMessage": "The message cannot be sent right now. Please try again or contact us by email.",
       "submit": "Send message",
       "submitting": "Sending..."
+    }
+  },
+  "legal": {
+    "heading": "Legal",
+    "contactTitle": "Contact ArtAqua / PostModerna",
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "intro": "How we handle personal data when you visit the ArtAqua website or contact the showroom.",
+      "sections": [
+        {
+          "title": "Who operates this website",
+          "paragraphs": [
+            "PostModerna operates the bathroom and sanitary equipment showroom website under its public-facing brand, ArtAqua. Our showroom address and email addresses are listed below."
+          ]
+        },
+        {
+          "title": "What we collect and why",
+          "paragraphs": [
+            "When you use the contact form, we receive your first and last names, email address, message and, if you choose to provide it, your phone number. The form also records the submission time and the website language in the email it sends to us.",
+            "We use this information to respond to your enquiry, provide the product or service information you request, and follow up on your request. The form is optional. You can also contact us directly by email or visit the showroom."
+          ]
+        },
+        {
+          "title": "Legal basis",
+          "paragraphs": [
+            "Under Article 10 of North Macedonia's Law on Personal Data Protection, the legal basis depends on the purpose of the processing. For an enquiry about a possible purchase or service, processing may be necessary to take steps you request before entering into a contract.",
+            "For general correspondence, handling and responding to enquiries may be a legitimate interest where the processing is necessary and your rights and interests do not override that interest. We may also process information where necessary to meet a legal obligation. Sending an enquiry is not treated as consent for unrelated uses."
+          ]
+        },
+        {
+          "title": "How long we keep information",
+          "paragraphs": [
+            "We keep enquiry correspondence only as long as needed to handle your request and any related follow-up. Information may be kept longer where necessary to meet applicable record-keeping obligations or to establish, exercise or defend legal claims."
+          ]
+        },
+        {
+          "title": "Who handles your information",
+          "paragraphs": [
+            "Our hosting provider delivers the website and processes web requests, including contact form submissions. When the website is hosted on Vercel, Vercel provides that infrastructure and may process technical request data such as IP addresses.",
+            "The contact form uses Gmail SMTP (Google) to deliver submissions to the business by email. Staff handling enquiries may access the correspondence to respond. The site does not store submissions in a separate website database."
+          ]
+        },
+        {
+          "title": "International processing",
+          "paragraphs": [
+            "Hosting and email providers may process information outside North Macedonia, depending on their services and deployment settings. You can contact us to ask about the locations and safeguards applicable to any transfer of your personal data."
+          ]
+        },
+        {
+          "title": "Cookies, maps and social links",
+          "paragraphs": [
+            "The website does not include its own analytics or advertising trackers. It may use browser local storage for the light or dark display preference.",
+            "The contact page embeds Google Maps. When the map loads, your browser connects to Google. Google may receive technical information such as your IP address and browser details, and may use cookies or similar technologies.",
+            "Instagram and Facebook are links, not embedded feeds. Those platforms handle information under their own privacy policies when you follow the links."
+          ],
+          "link": {
+            "label": "Google Privacy Policy",
+            "href": "https://policies.google.com/privacy"
+          }
+        },
+        {
+          "title": "Your rights",
+          "paragraphs": [
+            "You have the right to be informed about processing, access your personal data and have inaccurate data corrected. Where the legal conditions are met, you can request erasure, restriction or portability, or object to processing. You also have the right, where applicable, not to be subject to solely automated decisions with legal or similarly significant effects.",
+            "You can use the contact details below to exercise your rights. If you believe your right to personal data protection has been violated, you can submit a request to the Personal Data Protection Agency of North Macedonia, the supervisory authority."
+          ],
+          "link": {
+            "label": "Your rights and how to submit a request (Personal Data Protection Agency)",
+            "href": "https://azlp.mk/en/your-rights/"
+          }
+        }
+      ],
+      "contactNote": "For questions about this notice, how your data is handled, or to exercise your rights, contact us using the details below."
+    },
+    "termsOfUse": {
+      "title": "Terms of Use",
+      "intro": "These terms apply to use of the ArtAqua showroom website, operated by PostModerna.",
+      "sections": [
+        {
+          "title": "Catalogue and enquiries",
+          "paragraphs": [
+            "This website is an informational catalogue for the ArtAqua bathroom and sanitary equipment showroom. It shows product categories and galleries and provides ways to contact the business.",
+            "There is no online ordering, shopping cart, checkout or online payment. Sending a contact form message is an enquiry; it does not place an order or create a purchase contract by itself."
+          ]
+        },
+        {
+          "title": "Product information and availability",
+          "paragraphs": [
+            "Descriptions, gallery images and other catalogue information are illustrative. Colours, finishes, dimensions or included items may vary by product. Confirm exact specifications, availability, price and any service arrangements directly with ArtAqua before making a purchase."
+          ]
+        },
+        {
+          "title": "Intellectual property",
+          "paragraphs": [
+            "Site text, branding, photographs and other materials may be protected by intellectual property rights belonging to ArtAqua, PostModerna or the relevant third-party rights holder. You may browse the site for information and share links to public pages. Permission is needed to copy, republish or use protected materials commercially unless the law permits the use."
+          ]
+        },
+        {
+          "title": "Appropriate use",
+          "paragraphs": [
+            "Use the website lawfully and respect other people's rights. Do not send spam or unlawful material through the contact form, impersonate another person, or interfere with the operation or security of the website."
+          ]
+        },
+        {
+          "title": "External links and services",
+          "paragraphs": [
+            "The site links to external services such as Instagram and Facebook and embeds Google Maps for the showroom location. Those services have their own terms and privacy policies."
+          ]
+        },
+        {
+          "title": "Changes and legal rights",
+          "paragraphs": [
+            "We may update the catalogue, other website content or these terms from time to time. An update to the site does not change an existing purchase agreement by itself.",
+            "Nothing in these terms limits any mandatory consumer rights or legal protections, or excludes responsibilities that cannot be limited by law."
+          ]
+        }
+      ],
+      "contactNote": "Contact the showroom to confirm product details or ask a question about these terms."
+    },
+    "returnsRefunds": {
+      "title": "Returns & Refunds",
+      "intro": "Information about purchases made directly with the ArtAqua showroom and how to raise a return, refund or warranty question.",
+      "sections": [
+        {
+          "title": "Purchases are arranged directly",
+          "paragraphs": [
+            "This website does not accept online orders or payments and has no checkout. A message sent through the contact form is an enquiry, not a completed purchase. Purchases and related arrangements are handled directly with the business."
+          ]
+        },
+        {
+          "title": "Returns, exchanges, refunds and warranty",
+          "paragraphs": [
+            "Contact ArtAqua / PostModerna with questions about a return, exchange, refund, warranty or product problem. The applicable steps may depend on the type of purchase, the product, the transaction documents and the law. A receipt or invoice and product details can help us identify your purchase, if available."
+          ]
+        },
+        {
+          "title": "Defective or non-conforming products",
+          "paragraphs": [
+            "Requests about defective products or goods that do not conform to the contract are handled under applicable North Macedonian consumer protection legislation, including the Law on Consumer Protection, as amended. The available remedies depend on the circumstances and the applicable law."
+          ],
+          "link": {
+            "label": "Law on Consumer Protection (original text, PDF in Macedonian)",
+            "href": "https://portal.mdt.gov.mk/post-body-files/zastita-na-potrosuvaci-file-5LMg.pdf"
+          }
+        },
+        {
+          "title": "Distance and off-premises contracts",
+          "paragraphs": [
+            "Where a transaction qualifies as a distance contract or an off-premises contract, the statutory right of withdrawal applies where the law provides for it, subject to the relevant conditions and exceptions. This is not a general return promise for all purchases.",
+            "Nothing on this page limits your statutory consumer rights."
+          ]
+        }
+      ],
+      "contactNote": "For help with a specific purchase, contact us using the details below."
     }
   },
   "footer": {

@@ -23,6 +23,9 @@ The site is mostly static, with localized Macedonian and English routes and a se
 | `/en/products` | English    | Product category overview    |
 | `/contact`     | Macedonian | Contact information and form |
 | `/en/contact`  | English    | Contact information and form |
+| `/privacy-policy` and `/en/privacy-policy` | Macedonian and English | Privacy policy |
+| `/terms-of-use` and `/en/terms-of-use` | Macedonian and English | Website terms |
+| `/returns-refunds` and `/en/returns-refunds` | Macedonian and English | Returns and refunds information |
 
 ## Setup
 
