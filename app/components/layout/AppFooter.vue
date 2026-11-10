@@ -34,6 +34,26 @@ const legalLinks = [
         <p class="mt-4 max-w-sm text-sm leading-6 text-slate-300">
           {{ t('footer.tagline') }}
         </p>
+
+        <h2 class="mt-6 text-sm font-semibold uppercase tracking-wide text-cyan-200">
+          {{ t('social.follow') }}
+        </h2>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a
+            v-for="link in socialLinks"
+            :key="link.id"
+            :href="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex size-10 items-center justify-center rounded-full border border-white/10 text-slate-300 transition hover:border-cyan-200 hover:bg-white/10 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+            :aria-label="t(`social.${link.id}Aria`)"
+          >
+            <UIcon
+              :name="link.icon"
+              class="size-4"
+            />
+          </a>
+        </div>
       </section>
 
       <section>
@@ -98,26 +118,6 @@ const legalLinks = [
           <p class="mt-3 text-xs leading-5 text-slate-400">
             {{ t('contact.workingHoursNote') }}
           </p>
-        </div>
-
-        <h2 class="mt-6 text-sm font-semibold uppercase tracking-wide text-cyan-200">
-          {{ t('social.follow') }}
-        </h2>
-        <div class="mt-4 flex flex-wrap gap-3">
-          <a
-            v-for="link in socialLinks"
-            :key="link.id"
-            :href="link.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex size-10 items-center justify-center rounded-full border border-white/10 text-slate-300 transition hover:border-cyan-200 hover:bg-white/10 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
-            :aria-label="t(`social.${link.id}Aria`)"
-          >
-            <UIcon
-              :name="link.icon"
-              class="size-4"
-            />
-          </a>
         </div>
       </section>
     </div>
