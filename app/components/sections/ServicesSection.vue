@@ -25,7 +25,7 @@ const services = computed(() => (tm('home.services.items') as ServiceItem[]).map
         align="center"
       />
 
-      <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+      <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <article
           v-for="(service, index) in services"
           :key="service.title"

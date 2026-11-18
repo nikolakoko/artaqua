@@ -57,14 +57,14 @@
         "Since 1997, the company has successfully operated on the Macedonian market and has become a recognizable brand offering high-quality services.",
         "The modern design and high quality of the products reflect the goal of following the latest European trends while offering modern, functional and reliable bathroom solutions."
       ],
-      "brands": "The product range includes renowned Italian, Slovenian and Croatian manufacturers, including CERAMICA GRAVENA, GSG, HATRIA, FRIGES, REMER, FIORE, EFFEPI, KOLPA, REFLEX, ARMAL, UNITAS HERC, MINES and AQUAESTIL.",
+      "brands": "Our range includes products from renowned Italian, Spanish, German, Swiss, Czech, Slovak, Polish, Slovenian, Croatian, Serbian and Macedonian manufacturers, including KARAG, AZZURRA, GALASSIA, IDEAL STANDARD, GSG, HATRIA, ROCA, REMER, GEBERIT, GROHE, FIORE, FERRO, SLOVARM, ROSAN, KOLPA, UNITAS HERC, LIV FLUIDMASTER, AQUAESTIL and PESTAN.",
       "image": "logo/artaqua-logo-new.webp",
       "imageAlt": "Part of the ArtAqua showroom with sanitary equipment and bathroom furniture"
     },
     "services": {
       "eyebrow": "Services",
       "title": "Our services",
-      "description": "From product selection to installation and complete execution, ArtAqua connects bathroom equipment with practical solutions.",
+      "description": "From choosing equipment to installation and completing the entire project, ArtAqua offers a practical solution for your bathroom.",
       "body": [
         "Professional service and strong technical knowledge of the products are key characteristics of the ArtAqua brand.",
         "For products bought in the showroom, ArtAqua offers free delivery to your home in Skopje and professional installation.",
@@ -78,19 +78,15 @@
         },
         {
           "title": "Free delivery in Skopje",
-          "description": "Products purchased in the showroom include free delivery to your home in Skopje."
+          "description": "We deliver your purchases to your home in Skopje free of charge."
         },
         {
-          "title": "Installation",
-          "description": "Fast and professional installation of purchased equipment."
+          "title": "Professional installation",
+          "description": "Quality installation of purchased equipment, including hydro and aero massage systems."
         },
         {
-          "title": "Complete execution",
-          "description": "Execution through all stages of bathroom renovation."
-        },
-        {
-          "title": "Hydro-aero systems",
-          "description": "Installation of massage systems and additional equipment for acrylic bath tubs."
+          "title": "Service and warranty",
+          "description": "Full technical support, spare parts and authorized service for all our products."
         }
       ]
     },
@@ -110,7 +106,7 @@
   "products": {
     "eyebrow": "Assortment",
     "title": "Products",
-    "intro": "An overview of the six main product categories for complete bathroom equipment, prepared as a clear one-page product presentation.",
+    "intro": "We offer six main product categories: bathtubs, shower enclosures, sanitary ware, bathroom furniture, taps and accessories.",
     "ctaEyebrow": "Showroom visit",
     "ctaTitle": "Choose bathroom equipment with expert guidance",
     "ctaDescription": "For the right selection, technical details and available solutions, contact the ArtAqua showroom.",
@@ -136,32 +132,32 @@
       {
         "id": "bath-shower-trays-hydromassage",
         "title": "Bath tubs, shower trays and hydromassage systems",
-        "shortDescription": "Bath tubs and shower trays made of 100% sanitary acrylic, with hydro and aero massage systems, aromatherapy and chromotherapy options.",
+        "shortDescription": "Acrylic bathtubs and shower trays with options for hydro and aero massage systems, LED lighting and digital displays.",
         "details": [
-          "100% sanitary acrylic",
+          "Sanitary acrylic",
           "Hydro and aero massage systems",
-          "Aromatherapy and chromotherapy"
+          "LED lighting and digital displays"
         ],
         "referenceImage": "images/products/bath-shower-trays-hydromassage/gallery-01.png"
       },
       {
         "id": "shower-enclosures",
         "title": "Shower enclosures",
-        "shortDescription": "Shower enclosures made of tempered safety glass, hardened at high temperature and aligned with European standards.",
+        "shortDescription": "Tempered safety glass shower enclosures in all sizes and several colors.",
         "details": [
           "Tempered safety glass",
-          "High-temperature processing",
-          "Aligned with European standards"
+          "Available in all sizes",
+          "Color options"
         ],
         "referenceImage": "images/products/shower-enclosures/gallery-01.png"
       },
       {
         "id": "sanitary-ware",
         "title": "Sanitary ware",
-        "shortDescription": "High-quality sanitary ware made from material known locally as porcelain and internationally as vitreous china.",
+        "shortDescription": "Durable ceramic or porcelain sanitary ware.",
         "details": [
-          "High-quality material",
-          "Vitreous china",
+          "Ceramic",
+          "Porcelain",
           "Long-lasting quality"
         ],
         "referenceImage": "images/products/sanitary-ware/gallery-01.png"
@@ -169,33 +165,37 @@
       {
         "id": "bathroom-furniture",
         "title": "Bathroom furniture",
-        "shortDescription": "Bathroom furniture made from MDF with durable final protection, PVC laminate or multiple layers of high-quality polyurethane finish.",
+        "shortDescription": "MDF bathroom furniture with a quality protective finish in PVC foil or polyurethane paint, as well as mirrors with matching furniture or LED lighting.",
         "details": [
           "MDF base",
           "PVC laminate or polyurethane protection",
-          "Quality final appearance"
+          "Mirrors with furniture or LED lighting"
         ],
         "referenceImage": "images/products/bathroom-furniture/gallery-04.jpg"
       },
       {
         "id": "taps-showers",
         "title": "Taps and showers",
-        "shortDescription": "Chromium-plated brass taps with quality cartridge mechanisms that influence durability and warranty length.",
+        "shortDescription": "Taps in chrome-plated brass, gold plate, bronze, stainless steel or black. The quality mechanism affects both durability and warranty coverage.",
         "details": [
-          "Chromium-plated brass",
-          "Quality cartridge mechanism",
-          "Durability and warranty based on mechanism"
+          "Chrome-plated",
+          "Gold-plated",
+          "Bronze",
+          "Stainless steel",
+          "Black"
         ],
         "referenceImage": "images/products/taps-showers/gallery-03.png"
       },
       {
         "id": "accessories",
         "title": "Accessories",
-        "shortDescription": "Bathroom accessories made of brass with quality chromium-plating that preserves strength, finish and shine.",
+        "shortDescription": "Brass accessories with quality finishes that preserve their strength and color: chrome, gold plate, bronze, stainless steel and black.",
         "details": [
-          "Brass base",
-          "Quality chromium-plated finish",
-          "Preserved strength, color and shine"
+          "Chrome-plated",
+          "Gold-plated",
+          "Black",
+          "Stainless steel",
+          "Bronze"
         ],
         "referenceImage": "images/products/accessories/gallery-09.png"
       }
@@ -203,7 +203,7 @@
   },
   "contact": {
     "eyebrow": "Contact",
-    "title": "Contact",
+    "title": "Contact information",
     "intro": "Contact information for the ArtAqua showroom and PostModerna company, with a frontend form prepared for the next email phase.",
     "showroom": "ArtAqua",
     "company": "PostModerna",
