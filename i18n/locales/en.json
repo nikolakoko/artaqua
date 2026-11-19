@@ -137,8 +137,7 @@
           "Sanitary acrylic",
           "Hydro and aero massage systems",
           "LED lighting and digital displays"
-        ],
-        "referenceImage": "images/products/bath-shower-trays-hydromassage/gallery-01.png"
+        ]
       },
       {
         "id": "shower-enclosures",
@@ -147,9 +146,9 @@
         "details": [
           "Tempered safety glass",
           "Available in all sizes",
-          "Color options"
-        ],
-        "referenceImage": "images/products/shower-enclosures/gallery-01.png"
+          "Colored glass",
+          "Colored profiles"
+        ]
       },
       {
         "id": "sanitary-ware",
@@ -158,9 +157,9 @@
         "details": [
           "Ceramic",
           "Porcelain",
-          "Long-lasting quality"
-        ],
-        "referenceImage": "images/products/sanitary-ware/gallery-01.png"
+          "Long-lasting quality",
+          "Modern mechanisms"
+        ]
       },
       {
         "id": "bathroom-furniture",
@@ -170,8 +169,7 @@
           "MDF base",
           "PVC laminate or polyurethane protection",
           "Mirrors with furniture or LED lighting"
-        ],
-        "referenceImage": "images/products/bathroom-furniture/gallery-04.jpg"
+        ]
       },
       {
         "id": "taps-showers",
@@ -183,8 +181,7 @@
           "Bronze",
           "Stainless steel",
           "Black"
-        ],
-        "referenceImage": "images/products/taps-showers/gallery-03.png"
+        ]
       },
       {
         "id": "accessories",
@@ -196,8 +193,7 @@
           "Black",
           "Stainless steel",
           "Bronze"
-        ],
-        "referenceImage": "images/products/accessories/gallery-09.png"
+        ]
       }
     ]
   },

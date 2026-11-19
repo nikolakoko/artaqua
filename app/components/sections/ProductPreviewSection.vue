@@ -1,35 +1,23 @@
 <script setup lang="ts">
+import ProductCategoryImage from '~/components/products/ProductCategoryImage.vue'
 import BaseButton from '~/components/ui/BaseButton.vue'
 import SectionTitle from '~/components/ui/SectionTitle.vue'
 
 type ProductCategory = {
-  id: string
+  id: unknown
   title: unknown
   shortDescription: unknown
-  referenceImage?: unknown
 }
 
 const { t, tm } = useI18n()
 const { resolveMessage } = useI18nResolved()
 const localePath = useLocalePath()
 
-const failedImages = ref<Record<string, boolean>>({})
-
 const categories = computed(() => (tm('products.categories') as ProductCategory[]).map(category => ({
-  id: category.id,
+  id: resolveMessage(category.id),
   title: resolveMessage(category.title),
-  shortDescription: resolveMessage(category.shortDescription),
-  referenceImage: resolveMessage(category.referenceImage).trim()
+  shortDescription: resolveMessage(category.shortDescription)
 })))
-
-const shouldShowImage = (category: { id: string, referenceImage?: string }) => Boolean(category.referenceImage) && !failedImages.value[category.id]
-const markImageFailed = (id: string) => {
-  failedImages.value[id] = true
-}
-
-watch(categories, () => {
-  failedImages.value = {}
-})
 </script>
 
 <template>
@@ -55,27 +43,10 @@ watch(categories, () => {
           :key="category.id"
           class="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/8"
         >
-          <div class="flex aspect-4/3 items-center justify-center bg-cyan-50 p-6">
-            <img
-              v-if="shouldShowImage(category)"
-              :src="category.referenceImage"
-              :alt="category.title"
-              class="max-h-full max-w-full object-contain transition duration-300 group-hover:scale-[1.03]"
-              @error="markImageFailed(category.id)"
-            >
-            <div
-              v-else
-              class="flex h-full w-full flex-col items-center justify-center gap-3 text-center"
-            >
-              <UIcon
-                name="i-lucide-image-off"
-                class="size-9 text-cyan-800/70"
-              />
-              <p class="text-sm font-medium text-slate-600">
-                {{ t('common.labels.imagePlaceholder') }}
-              </p>
-            </div>
-          </div>
+          <ProductCategoryImage
+            :category-id="category.id"
+            :alt="category.title"
+          />
           <div class="p-5">
             <h3 class="text-lg font-semibold text-slate-900">
               {{ category.title }}

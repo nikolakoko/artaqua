@@ -137,8 +137,7 @@
           "Санитарен акрил",
           "Хидро и аеро масажни системи",
           "LED светло и дигитални екрани"
-        ],
-        "referenceImage": "images/products/bath-shower-trays-hydromassage/gallery-01.png"
+        ]
       },
       {
         "id": "shower-enclosures",
@@ -147,9 +146,9 @@
         "details": [
           "Калено сигурносно стакло",
           "Во сите димензии",
-          "Во боја"
-        ],
-        "referenceImage": "images/products/shower-enclosures/gallery-01.png"
+          "Стакло во боја",
+          "Профили во боја"
+        ]
       },
       {
         "id": "sanitary-ware",
@@ -158,9 +157,9 @@
         "details": [
           "Керамика",
           "Порцелан",
-          "Траен квалитет"
-        ],
-        "referenceImage": "images/products/sanitary-ware/gallery-01.png"
+          "Траен квалитет",
+          "Модерни механизми"
+        ]
       },
       {
         "id": "bathroom-furniture",
@@ -170,8 +169,7 @@
           "МДФ основа",
           "ПВЦ фолија или полиуретанска заштита",
           "Огледала со мебел или LED"
-        ],
-        "referenceImage": "images/products/bathroom-furniture/gallery-04.jpg"
+        ]
       },
       {
         "id": "taps-showers",
@@ -183,8 +181,7 @@
           "Бронза",
           "Инокс",
           "Црна боја"
-        ],
-        "referenceImage": "images/products/taps-showers/gallery-03.png"
+        ]
       },
       {
         "id": "accessories",
@@ -196,8 +193,7 @@
           "Црна боја",
           "Инокс",
           "Бронза"
-        ],
-        "referenceImage": "images/products/accessories/gallery-09.png"
+        ]
       }
     ]
   },

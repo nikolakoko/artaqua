@@ -14,7 +14,6 @@ useHead({
 type ProductCategory = {
   id: unknown
   title: unknown
-  shortDescription: unknown
   details?: unknown[]
 }
 
@@ -70,7 +69,6 @@ const getCategoryImages = (category: ProductCategory) => getProductGalleryImages
             :key="getCategoryId(category)"
             :category="category"
             :index="index"
-            :preview-image="getCategoryImages(category)[0]"
             :gallery-count="getCategoryImages(category).length"
             @open-gallery="openCategory"
           />
